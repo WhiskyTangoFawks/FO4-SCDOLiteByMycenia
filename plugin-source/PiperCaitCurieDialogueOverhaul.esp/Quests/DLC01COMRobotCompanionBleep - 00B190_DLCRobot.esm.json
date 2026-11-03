@@ -1,0 +1,603 @@
+{
+  "FormKey": "00B190:DLCRobot.esm",
+  "VersionControl": 8290,
+  "EditorID": "DLC01COMRobotCompanionBleep",
+  "Version2": 11,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "DLC01:DLC01CompanionUnlockScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "VoiceTypeFormlist",
+            "Object": "00B214:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RobotCompanion",
+            "Object": "00B190:DLCRobot.esm",
+            "Alias": 0
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Followers",
+            "Object": "0289E4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01COMRobotCompanion_UnlockScene",
+            "Object": "00B216:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CommandTarget",
+            "Object": "00B190:DLCRobot.esm",
+            "Alias": 4
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01_CompanionFailedToUnlock",
+            "Object": "008BF8:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01_Ability_Lockpicking",
+            "Object": "008BF6:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01EyebotInteractVFX",
+            "Object": "00F904:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CommandActor",
+            "Object": "00B190:DLCRobot.esm",
+            "Alias": 3
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01_Ability_Hacking",
+            "Object": "008BF5:DLCRobot.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionBle_0100B190",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_RobotCompanionBleep",
+          "Object": "00B190:DLCRobot.esm",
+          "Alias": 0
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_CommandTarget",
+          "Object": "00B190:DLCRobot.esm",
+          "Alias": 4
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "DLC01EncWorkbenchBot01",
+          "Object": "001EED:DLCRobot.esm"
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionBle_0100B190",
+        "FragmentName": "Fragment_Stage_0000_Item_00"
+      },
+      {
+        "Stage": 80,
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionBle_0100B190",
+        "FragmentName": "Fragment_Stage_0080_Item_00"
+      },
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionBle_0100B190",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      },
+      {
+        "Stage": 90,
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionBle_0100B190",
+        "FragmentName": "Fragment_Stage_0090_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "00B190:DLCRobot.esm",
+          "Alias": 0
+        },
+        "Scripts": [
+          {
+            "Name": "DLC01:DLC01RobotAliasDeathScript"
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Robot Companion Dialogue Bleep Type"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "AddIdleTopicToHello",
+      "AllowRepeatedStages",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 70,
+    "Unused": 92
+  },
+  "Filter": "DLC01\\Companions\\",
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetInFaction",
+        "ParameterOneRecord": "00F47A:DLCRobot.esm",
+        "ParameterOneNumber": 16839802
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Flags": [
+        "OR"
+      ],
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "0024E1:DLCRobot.esm",
+        "ParameterOneNumber": 16786657
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Flags": [
+        "OR"
+      ],
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "00B211:DLCRobot.esm",
+        "ParameterOneNumber": 16822801
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Flags": [
+        "OR"
+      ],
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "00F618:DLCRobot.esm",
+        "ParameterOneNumber": 16840216
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Debug Create Robot"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Unlock Command Target"
+        }
+      ]
+    },
+    {
+      "Index": 80,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Pickup Companion"
+        }
+      ]
+    },
+    {
+      "Index": 90,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Dismiss Companion"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "RobotCompanionBleep",
+      "Flags": [
+        "Optional",
+        "QuestObject",
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "VoiceTypes": "00B214:DLCRobot.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 1,
+      "Name": "Companion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 0
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 2,
+      "Name": "DogmeatCompanion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 5
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "CommandActor",
+      "Flags": [
+        "Optional"
+      ],
+      "VoiceTypes": "00B214:DLCRobot.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 4,
+      "Name": "CommandTarget",
+      "Flags": [
+        "Optional"
+      ],
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "00B1A4:DLCRobot.esm",
+      "VersionControl": 8290,
+      "EditorID": "DLC01COMRBleepGreets",
+      "Version2": 3,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "DLC01COMRBleepGreets"
+      },
+      "Quest": "00B190:DLCRobot.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "00B1CE:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 5,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010E4A:DLCRobot.esm",
+          "SharedDialog": "00B1ED:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "0024E1:DLCRobot.esm",
+                "ParameterOneNumber": 16786657
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "010CEA:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 1,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "00B1CE:DLCRobot.esm",
+          "SharedDialog": "01077C:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "0024E1:DLCRobot.esm",
+                "ParameterOneNumber": 16786657
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "010CEB:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 1,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010CEA:DLCRobot.esm",
+          "SharedDialog": "01077D:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "0024E1:DLCRobot.esm",
+                "ParameterOneNumber": 16786657
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00F72A:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010CEB:DLCRobot.esm",
+          "SharedDialog": "00F778:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "00B211:DLCRobot.esm",
+                "ParameterOneNumber": 16822801
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "010CEC:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 1,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "00F72A:DLCRobot.esm",
+          "SharedDialog": "010792:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "00B211:DLCRobot.esm",
+                "ParameterOneNumber": 16822801
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "010CED:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 1,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010CEC:DLCRobot.esm",
+          "SharedDialog": "010793:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "00B211:DLCRobot.esm",
+                "ParameterOneNumber": 16822801
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00F72B:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010CED:DLCRobot.esm",
+          "SharedDialog": "00F784:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "00F618:DLCRobot.esm",
+                "ParameterOneNumber": 16840216
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "010CEE:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 1,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "00F72B:DLCRobot.esm",
+          "SharedDialog": "0107A8:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "00F618:DLCRobot.esm",
+                "ParameterOneNumber": 16840216
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "010CEF:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 1,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010CEE:DLCRobot.esm",
+          "SharedDialog": "0107A9:DLCRobot.esm",
+          "DialogGroup": "010E4A:DLCRobot.esm",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "00F618:DLCRobot.esm",
+                "ParameterOneNumber": 16840216
+              }
+            }
+          ],
+          "StartScene": "00B215:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

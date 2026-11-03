@@ -1,0 +1,296 @@
+{
+  "FormKey": "0886E8:Fallout4.esm",
+  "VersionControl": 7538,
+  "EditorID": "DialogueGoodneighborGuards",
+  "Version2": 3,
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 30,
+    "Unused": 92
+  },
+  "Location": "022610:Fallout4.esm",
+  "Filter": "Dialogue\\Goodneighbor\\",
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetInFaction",
+        "ParameterOneRecord": "0E1ACC:Fallout4.esm",
+        "ParameterOneNumber": 924364
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "Companion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 0
+      },
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0886E9:Fallout4.esm",
+      "VersionControl": 6888,
+      "Quest": "0886E8:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Hello",
+      "SubtypeName": "HELO",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "10C558:Fallout4.esm",
+          "VersionControl": 10626,
+          "Version2": 7,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "0x4"
+            ]
+          },
+          "PreviousDialog": "10C557:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You know who kicked the ghouls out of Diamond City, right? That blowhard, Mayor McDonough. He'll get his one day, you watch."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF040B28A0327D401"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xCC5960",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24665,
+                "ParameterOneRecord": "1764DF:Fallout4.esm",
+                "ParameterOneNumber": 1533151,
+                "ParameterTwoRecord": "0003E8:Fallout4.esm",
+                "ParameterTwoNumber": 1000
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xCC5960",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24665,
+                "ParameterOneRecord": "002F08:Fallout4.esm",
+                "ParameterOneNumber": 12040
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "10C559:Fallout4.esm",
+          "VersionControl": 10626,
+          "Version2": 6,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "0x4"
+            ]
+          },
+          "PreviousDialog": "10C558:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "So, not only is Diamond City's mayor dead... turns out he was a synth all along. And they say Goodneighbor's crazy..."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD0DE36820927D401"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xD05960",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24665,
+                "ParameterOneRecord": "002F08:Fallout4.esm",
+                "ParameterOneNumber": 12040
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "116014:Fallout4.esm",
+          "VersionControl": 10626,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "0x4"
+            ]
+          },
+          "PreviousDialog": "088715:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Might stop by the Memory Den later. There was this girl, few months ago? Man, oh man, wouldn't mind seein' those curves again."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x90EFB00D0B27D401"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x0B5A60",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24666,
+                "ParameterOneRecord": "0228A5:Fallout4.esm",
+                "ParameterOneNumber": 141477
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "116015:Fallout4.esm",
+          "VersionControl": 10626,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "0x4"
+            ]
+          },
+          "PreviousDialog": "116014:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "The Memory Den's great, just don't get hooked like old Kent. Poor bastard's practically stuck in the past."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x706CA2579964CF01"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x0F5A60",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24666,
+                "ParameterOneRecord": "0228AA:Fallout4.esm",
+                "ParameterOneNumber": 141482
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "116016:Fallout4.esm",
+          "VersionControl": 10626,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "0x4"
+            ]
+          },
+          "PreviousDialog": "116015:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Fred Allen at the Hotel Rexford... he can hook you up with chems. Irma at the Memory Den... she offers a whole other class of drug."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x607608F8796ED501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x125A60",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24666,
+                "ParameterOneRecord": "0226D9:Fallout4.esm",
+                "ParameterOneNumber": 141017
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

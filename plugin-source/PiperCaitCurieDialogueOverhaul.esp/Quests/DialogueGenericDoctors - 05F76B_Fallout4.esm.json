@@ -1,0 +1,797 @@
+{
+  "FormKey": "05F76B:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "DialogueGenericDoctors",
+  "Version2": 15,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "GenericDoctorsScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PerceptionCondition",
+            "Object": "00036C:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RightAttackCondition",
+            "Object": "00036F:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DoctorMedicineScene03_AllDone",
+            "Object": "05FD41:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RightMobilityCondition",
+            "Object": "000371:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CureAddictions",
+            "Object": "1C9A6A:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "EnduranceCondition",
+            "Object": "00036D:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ServiceCostCureWoundsSmall",
+            "Object": "0C03D0:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "HC_Manager",
+            "Object": "00080E:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "IdlePreppingNeedle",
+            "Object": "164331:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Caps001",
+            "Object": "00000F:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Health",
+            "Object": "0002D4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ServiceCostCureAddict",
+            "Object": "0C03D3:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LeftAttackCondition",
+            "Object": "00036E:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ServiceCostCureRads",
+            "Object": "0C03D2:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LeftMobilityCondition",
+            "Object": "000370:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Rads",
+            "Object": "0002E1:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ServiceCostCureWoundsLarge",
+            "Object": "0C03D1:Fallout4.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_DialogueGenericDoctors_0005F76B",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pCaravanBase",
+          "Object": "0DC8FB:Fallout4.esm"
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 100,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGenericDoctors_0005F76B",
+        "FragmentName": "Fragment_Stage_0100_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "05F76B:Fallout4.esm",
+          "Alias": 0
+        },
+        "Scripts": [
+          {
+            "Name": "JobAliasOnUnloadScript"
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Doctor Dialogue System"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 25,
+    "Unused": 92
+  },
+  "TextDisplayGlobals": [
+    "0C03D3:Fallout4.esm",
+    "0C03D2:Fallout4.esm",
+    "0C03D1:Fallout4.esm",
+    "0C03D0:Fallout4.esm",
+    "043C79:Fallout4.esm"
+  ],
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 10,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Doctor Sun Met"
+        }
+      ]
+    },
+    {
+      "Index": 100,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Met Doc Weathers"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "Doctor",
+      "Flags": [
+        "Optional"
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x17FB10",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetGlobalValue",
+            "ParameterOneRecord": "036E00:Fallout4.esm",
+            "ParameterOneNumber": 224768
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Flags": [
+            "OR"
+          ],
+          "Unknown1": "0x17FB10",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetInFaction",
+            "ParameterOneRecord": "07925A:Fallout4.esm",
+            "ParameterOneNumber": 496218
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Flags": [
+            "OR"
+          ],
+          "Unknown1": "0x17FB10",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetInFaction",
+            "ParameterOneRecord": "10C047:Fallout4.esm",
+            "ParameterOneNumber": 1097799
+          }
+        }
+      ],
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0A7CC6:Fallout4.esm",
+      "VersionControl": 7420,
+      "Version2": 2,
+      "Quest": "05F76B:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "03200D:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 10,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "071549:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "We offer a wide variety of medical treatments."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "032012:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 9,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "03200D:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Let's get you examined right away. Time is not on the side of the surgeon."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "032013:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 9,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "032012:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Don't dally. If you're here to be examined, let's get you examined."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "032014:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 12,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "032013:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Radiation poisoning is a common ailment, but we can cure just about anything."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "071548:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ],
+            "ResetHours": 8.0
+          },
+          "PreviousDialog": "07154A:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Seeing as you've barged into my home, I'm assuming you need emergency treatment?"
+              },
+              "ScriptNotes": "someone just entered your house looking for you",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA049BCAA4213D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x47025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetInCell",
+                "Unknown2": 24066,
+                "ParameterOneRecord": "001E5F:Fallout4.esm",
+                "ParameterOneNumber": 7775
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x47025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "IsTimeSpanAnyNight",
+                "Unknown2": 24066
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "071549:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "071548:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It couldn't wait? *sigh* Fine. What do you need?"
+              },
+              "ScriptNotes": "someone just entered your house looking for you",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD04314BF4213D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x4B025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetInCell",
+                "Unknown2": 24066,
+                "ParameterOneRecord": "001E5F:Fallout4.esm",
+                "ParameterOneNumber": 7775
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x4B025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "IsTimeSpanAnyNight",
+                "Unknown2": 24066
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "07154A:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ],
+            "ResetHours": 8.0
+          },
+          "PreviousDialog": "17D11E:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "This better be an emergency."
+              },
+              "ScriptNotes": "someone is bothering you while you aren't at work",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF0DC20724213D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x43025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "IsTimeSpanAnyNight",
+                "Unknown2": 24066
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0BDA81:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 6,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ],
+            "ResetHours": 0.09997711
+          },
+          "PreviousDialog": "13A050:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I suppose you're here for my medical services. Let's see what's wrong with you today."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFB935F",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetGlobalValue",
+                "Unknown2": 24467,
+                "ParameterOneRecord": "098134:Fallout4.esm",
+                "ParameterOneNumber": 622900
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFB935F",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24467,
+                "ParameterOneRecord": "045ACD:Fallout4.esm",
+                "ParameterOneNumber": 285389
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0BDA82:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 6,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ],
+            "ResetHours": 0.09997711
+          },
+          "PreviousDialog": "0BDA81:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Are you injured? It's a wonder you and Glory don't set off metal detectors."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFE935F",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24467,
+                "ParameterOneRecord": "045ACF:Fallout4.esm",
+                "ParameterOneNumber": 285391
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFE935F",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetGlobalValue",
+                "Unknown2": 24467,
+                "ParameterOneRecord": "098134:Fallout4.esm",
+                "ParameterOneNumber": 622900
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFE935F",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24467,
+                "ParameterOneRecord": "045ACD:Fallout4.esm",
+                "ParameterOneNumber": 285389
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0BDA83:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 6,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly",
+              "RandomEnd"
+            ]
+          },
+          "PreviousDialog": "0BDA82:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I'm very busy. Unless you need my medical expertise - please bother someone else."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF04E4D272CD6D401"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x03945F",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetGlobalValue",
+                "Unknown2": 24468,
+                "ParameterOneRecord": "098134:Fallout4.esm",
+                "ParameterOneNumber": 622900
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x03945F",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24468,
+                "ParameterOneRecord": "045ACD:Fallout4.esm",
+                "ParameterOneNumber": 285389
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "17D11E:Fallout4.esm",
+          "VersionControl": 10286,
+          "Version2": 4,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ],
+            "ResetHours": 24.0
+          },
+          "PreviousDialog": "0ECE65:Fallout4.esm",
+          "DialogGroup": "0ECE65:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You'll be pleased to hear that Mister Sullivan made a full recovery. Now, what can we do for you today?"
+              },
+              "ScriptNotes": "you helped patch up Danny Sullivan when he was wounded",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x60DC05E56ABACF01"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x3F025E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDeadCount",
+                "Unknown2": 24066,
+                "ParameterOneRecord": "0190BF:Fallout4.esm",
+                "ParameterOneNumber": 102591
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x3F025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24066,
+                "ParameterOneRecord": "1764DF:Fallout4.esm",
+                "ParameterOneNumber": 1533151,
+                "ParameterTwoRecord": "0003E8:Fallout4.esm",
+                "ParameterTwoNumber": 1000
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x3F025E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24066,
+                "ParameterOneRecord": "1764DF:Fallout4.esm",
+                "ParameterOneNumber": 1533151,
+                "ParameterTwoRecord": "000019:Fallout4.esm",
+                "ParameterTwoNumber": 25
+              }
+            }
+          ],
+          "StartScene": "05FD39:Fallout4.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

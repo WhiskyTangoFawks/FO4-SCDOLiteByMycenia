@@ -1,0 +1,137 @@
+{
+  "FormKey": "0219C6:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "DialogueGeneric",
+  "Version2": 13,
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Combat Lines, Reaction Lines, Etc"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled"
+    ],
+    "Priority": 5,
+    "Unused": 92
+  },
+  "Filter": "Dialogue\\Generic\\",
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "0479F8:Fallout4.esm",
+        "ParameterOneNumber": 293368
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Aliases": [],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "03D77F:Fallout4.esm",
+      "VersionControl": 6703,
+      "Quest": "0219C6:Fallout4.esm",
+      "Category": "Detection",
+      "Subtype": "NormalToAlert",
+      "SubtypeName": "NOTA",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0C7D3F:Fallout4.esm",
+          "MajorRecordFlagsRaw": 64,
+          "VersionControl": 10094,
+          "EditorID": "GenericNormalToAlertGroup",
+          "Version2": 3,
+          "Fallout4MajorRecordFlags": [
+            "0x40"
+          ],
+          "Flags": {
+            "Flags": [
+              "Random",
+              "DoNotDoAllBeforeRepeating"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "Null",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "018DFA:Fallout4.esm",
+                "ParameterOneNumber": 101882
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 2.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetValue",
+                "ParameterOneRecord": "0002EC:Fallout4.esm",
+                "ParameterOneNumber": 748
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionGlobal",
+              "CompareOperator": "LessThanOrEqualTo",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": "07143B:Fallout4.esm",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetRandomPercent"
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "083C7C:Fallout4.esm",
+                "ParameterOneNumber": 539772
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "083C7A:Fallout4.esm",
+                "ParameterOneNumber": 539770
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "ParameterOneRecord": "083C7B:Fallout4.esm",
+                "ParameterOneNumber": 539771
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "0",
+          "MajorFlags": [
+            "InfoGroup"
+          ]
+        }
+      ]
+    }
+  ]
+}

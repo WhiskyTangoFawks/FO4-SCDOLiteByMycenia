@@ -1,0 +1,430 @@
+{
+  "FormKey": "10CB94:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "FFGoodneighbor03",
+  "Version2": 12,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "FFGoodneighbor03Script"
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_FFGoodneighbor03_0010CB94",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "XPRadiant",
+          "Object": "0B1758:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "LL_Chems_Any",
+          "Object": "0366B8:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_Canister",
+          "Object": "10CB94:Fallout4.esm",
+          "Alias": 7
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "DN102_HalluciGenGasCanister",
+          "Object": "0E69AF:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Caps001",
+          "Object": "00000F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_DungeonMapMarker",
+          "Object": "10CB94:Fallout4.esm",
+          "Alias": 0
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_FFGoodneighbor03_0010CB94",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      },
+      {
+        "Stage": 100,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_FFGoodneighbor03_0010CB94",
+        "FragmentName": "Fragment_Stage_0100_Item_00"
+      },
+      {
+        "Stage": 500,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_FFGoodneighbor03_0010CB94",
+        "FragmentName": "Fragment_Stage_0500_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "10CB94:Fallout4.esm",
+          "Alias": 3
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 500
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Hazardous Material"
+  },
+  "Data": {
+    "Flags": [
+      "RunOnce",
+      "WarnOnAliasFillFailure"
+    ],
+    "Priority": 45,
+    "Unused": 92,
+    "Type": "Misc"
+  },
+  "QuestCompletionXp": "22F0FE:Fallout4.esm",
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 10,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Quest Accepted"
+        }
+      ]
+    },
+    {
+      "Index": 100,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [
+            "CompleteQuest"
+          ],
+          "Note": "quest complete - reward money"
+        }
+      ]
+    },
+    {
+      "Index": 500,
+      "Unknown": 32,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Quest Giver Dead, fail quest"
+        }
+      ]
+    }
+  ],
+  "Objectives": [
+    {
+      "Index": 10,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Bring a HalluciGen Canister to Fred Allen"
+      },
+      "Targets": [
+        {
+          "AliasID": 7,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetItemCount",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "0E69AF:Fallout4.esm",
+                "ParameterOneNumber": 944559
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 3,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetItemCount",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "0E69AF:Fallout4.esm",
+                "ParameterOneNumber": 944559
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 1,
+      "Name": "Dungeon",
+      "Flags": [
+        "AllowReserved"
+      ],
+      "SpecificLocation": "0342E7:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "DungeonMapMarker",
+      "Flags": [
+        "AllowReserved"
+      ],
+      "Location": {
+        "AliasID": 1,
+        "RefType": "02271F:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "QuestGiver",
+      "Flags": [
+        "AllowReserved"
+      ],
+      "UniqueActor": "0226D9:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 7,
+      "Name": "Canister",
+      "Flags": [
+        "QuestObject",
+        "AllowDisabled"
+      ],
+      "Location": {
+        "AliasID": 1,
+        "RefType": "07828C:Fallout4.esm"
+      },
+      "Keywords": [
+        "1B3FAC:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "10CB9D:Fallout4.esm",
+      "VersionControl": 7313,
+      "Quest": "10CB94:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "10CBBE:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 4,
+          "Flags": {
+            "Flags": [
+              "0x4",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You're back! How was HalluciGen? Find me something good?"
+              },
+              "ScriptNotes": "you hired the player to find chemicals from HalluciGen",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF0AF6813DD89D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0xB99662",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetItemCount",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "0E69AF:Fallout4.esm",
+                "ParameterOneNumber": 944559
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB99662",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "10CB94:Fallout4.esm",
+                "ParameterOneNumber": 1100692,
+                "ParameterTwoRecord": "00000A:Fallout4.esm",
+                "ParameterTwoNumber": 10
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB99662",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "10CB94:Fallout4.esm",
+                "ParameterOneNumber": 1100692,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB99662",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "0226D9:Fallout4.esm",
+                "ParameterOneNumber": 141017
+              }
+            }
+          ],
+          "StartScene": "10CBDA:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "10CBBF:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 4,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "10CBBE:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Hey, did you ever make it to HalluciGen? Find anything for me?"
+              },
+              "ScriptNotes": "you hired the player to find chemicals from HalluciGen",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x30DF052ADD89D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBD9662",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "10CB94:Fallout4.esm",
+                "ParameterOneNumber": 1100692,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0xBD9662",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetItemCount",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "0E69AF:Fallout4.esm",
+                "ParameterOneNumber": 944559
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBD9662",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "10CB94:Fallout4.esm",
+                "ParameterOneNumber": 1100692,
+                "ParameterTwoRecord": "00000A:Fallout4.esm",
+                "ParameterTwoNumber": 10
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBD9662",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 25238,
+                "ParameterOneRecord": "0226D9:Fallout4.esm",
+                "ParameterOneNumber": 141017
+              }
+            }
+          ],
+          "StartScene": "10CBDA:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

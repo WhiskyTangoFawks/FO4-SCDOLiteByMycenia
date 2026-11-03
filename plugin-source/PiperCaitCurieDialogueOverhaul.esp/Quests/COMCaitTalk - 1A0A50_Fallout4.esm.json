@@ -1,0 +1,1285 @@
+{
+  "FormKey": "1A0A50:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "COMCaitTalk",
+  "Version2": 3,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "COMTalkQuestScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T5_Hatred",
+            "Object": "04B1C8:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CompanionActor",
+            "Object": "079305:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T1_Infatuation",
+            "Object": "04B1C4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T4_Disdain",
+            "Object": "04B1C7:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T2_Admiration",
+            "Object": "04B1C5:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T3_Neutral",
+            "Object": "04B1C6:Fallout4.esm"
+          }
+        ]
+      }
+    ],
+    "Versioning": [
+      "Break0"
+    ],
+    "Script": {
+      "Name": ""
+    }
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Cait Talk/Relationship Scene"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 30,
+    "Unused": 92
+  },
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x712D8E",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsAliasRef"
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "Cait",
+      "Flags": [
+        "QuestObject",
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "079249:Fallout4.esm",
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "1A0A52:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A0A72:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A71:Fallout4.esm",
+          "DialogGroup": "1A0A6D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "112004:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I'm havin' some pretty naughty thoughts about you right now, so I'd say we're doin' pretty damn good."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x901C51479D50D001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC0D:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A72:Fallout4.esm",
+          "DialogGroup": "1A0A6D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "There's nowhere else I'd rather be than right here, at your side."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x009DA65CBE9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC0E:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC0D:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A6D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "112004:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "If you're feelin' tired, we could always find a bed."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x806B2E81BE9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC12:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC0E:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A6D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I owe you anythin' and everythin', and one day... I'll find some way to repay you."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x60C25DFCBE9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC15:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC12:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A6D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Never bein' lonely again is all I've ever wished for. Thank you."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE01A3E4DBF9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A0A53:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A0A95:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A94:Fallout4.esm",
+          "DialogGroup": "1A0A90:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84A:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Why the fuck do you care how I feel? I was out of me mind to follow the likes of you."
+              },
+              "ScriptNotes": "Talking to someone you loathe.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x908269A8A450D001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC1D:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A95:Fallout4.esm",
+          "DialogGroup": "1A0A90:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I almost thought you cared. I'm a goddamn fool."
+              },
+              "ScriptNotes": "Talking to someone you loathe.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD0A40295C09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC1E:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC1D:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A90:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84A:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It's probably best if you just stay the hell away from me."
+              },
+              "ScriptNotes": "Talking to someone you loathe.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x7057AEAFC09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC1F:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC1E:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A90:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I dunno why I've wasted me time with the likes of you."
+              },
+              "ScriptNotes": "Talking to someone you loathe.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF02572CAC09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC20:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC1F:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A90:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Can't believe Tommy stuck me with a loser like you."
+              },
+              "ScriptNotes": "Talking to someone you loathe.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x70D1A3E5C09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A0A54:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A0A8A:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A89:Fallout4.esm",
+          "DialogGroup": "1A0A85:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "That's a stupid question comin' from someone who doesn't give a shite about me."
+              },
+              "ScriptNotes": "Talking to someone you're not pleased with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x00D597BDA350D001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC18:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A8A:Fallout4.esm",
+          "DialogGroup": "1A0A85:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "If you're tryin' to piss me off, it's workin'."
+              },
+              "ScriptNotes": "Talking to someone you're not pleased with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD058E1EEBF9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC19:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC18:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A85:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84C:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "If things don't shape up soon, I'm movin' on to greener pastures."
+              },
+              "ScriptNotes": "Talking to someone you're not pleased with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x6072990AC09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC1A:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC19:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A85:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Things aren't lookin' too good. Might have to look up the old Combat Zone again."
+              },
+              "ScriptNotes": "Talking to someone you're not pleased with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x207FFB30C09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC1B:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC1A:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A85:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Startin' to think this was all a big mistake."
+              },
+              "ScriptNotes": "Talking to someone you're not pleased with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD0CC5E4DC09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC1C:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC1B:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A85:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I'm getting bored of all the good work we're doin'. When can we start actin' bad?"
+              },
+              "ScriptNotes": "Talking to someone you're not pleased with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA0AC5772C09CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A0A56:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A0A6C:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A6B:Fallout4.esm",
+          "DialogGroup": "1A0A67:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "We're doin' pretty good I'd say... and in this shitehole we call a world, that's really sayin' something."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xC0C83A1FA050D001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC16:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A6C:Fallout4.esm",
+          "DialogGroup": "1A0A67:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I'm glad ya took me on. Question is... can you hold onto me?"
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD0B5C87DBF9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC17:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC16:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0A67:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Bein' out here with you makes me glad I left the Combat Zone."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x3001E3C6BF9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A0A57:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A0AC5:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0AC4:Fallout4.esm",
+          "DialogGroup": "1A0AC0:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "There's no way I could ask for a better partner or a better friend."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x101913DF9E50D001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC0F:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0AC5:Fallout4.esm",
+          "DialogGroup": "1A0AC0:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It's nice havin' you by me side. Only friend I've ever had was a bottle full of whiskey."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD02664A9BE9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC10:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC0F:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0AC0:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I'll tell you what... you keep pointin', and I'll keep shootin'. It's a match made in heaven."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x00CE78C7BE9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC11:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC10:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0AC0:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I owe you anythin' and everythin', and one day... I'll find some way to repay you."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x302FDAE8BE9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC13:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC11:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0AC0:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You saved me life and you saved me soul. I guess I'm runnin' a hell of a bar tab."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xC0E5CD1CBF9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC14:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC13:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A0AC0:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Never bein' lonely again is all I've ever wished for. Thank you."
+              },
+              "ScriptNotes": "Talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x40823A39BF9CD501"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A0A58:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0054E0:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "Null",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Alright then."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x105E2943408BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0054E1:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054E0:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Yeah, sure... whatever."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA099D566408BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0054E2:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054E1:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "What'cha need?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x40FECDA0408BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0054E4:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054E2:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Quit stallin'."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x200C4900418BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0054E7:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054E4:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "What's on your mind?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x20670F57418BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0054E8:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054E7:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Just ask, and I'll try to help."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x30B0C07E418BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "005544:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054E8:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I'm here if you need to talk."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x20B96A31508BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A0AC6:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A0A5C:Fallout4.esm",
+      "VersionControl": 7768,
+      "Quest": "1A0A50:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0054DF:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A0A79:Fallout4.esm",
+          "OverrideFileName": "0000364b",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Tell me about the options."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x50A218E06B8BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "Romance",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "005576:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10097,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0054DF:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00003dfe",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "What else do you have? (More Options)"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x50E28E91A69DD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "Romance",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "005577:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10097,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "005576:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00003dff",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Show me what you got. (More Options)"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x109AD997A69DD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "Romance",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "005578:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10073,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "005577:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00004599",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I wanted to ask you about something else."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x109241F26C8BD501"
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "Romance",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

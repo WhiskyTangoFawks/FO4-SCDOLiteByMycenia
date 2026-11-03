@@ -1,0 +1,1232 @@
+{
+  "FormKey": "003648:Fallout4.esm",
+  "VersionControl": 7948,
+  "EditorID": "DialogueDiamondCity",
+  "Version2": 1,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "DialogueDiamondCityScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SecondBase",
+            "Object": "022B40:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "HomeBase",
+            "Object": "022B42:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "FirstBase",
+            "Object": "022B3F:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "StartBase",
+            "Object": "022B3E:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ThirdBase",
+            "Object": "022B41:Fallout4.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "BoS301",
+          "Object": "0AE51C:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pMQ04",
+          "Object": "01F25E:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pFFDiamondCity02",
+          "Object": "14191C:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "DN070WorldSeriesBat",
+          "Object": "0E9A43:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "PublickOccurencesArticle01",
+          "Object": "12CF27:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "ServiceCostBuyHouse",
+          "Object": "0D35FA:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "CustomItem_WorldSeriesBat",
+          "Object": "0AEC4F:Fallout4.esm",
+          "Alias": 71
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pCaps001",
+          "Object": "00000F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pMQ103",
+          "Object": "0229E5:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Caps001",
+          "Object": "00000F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "FFDiamondCity02",
+          "Object": "14191C:Fallout4.esm"
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 170,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0170_Item_00"
+      },
+      {
+        "Stage": 600,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0600_Item_00"
+      },
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      },
+      {
+        "Stage": 500,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0500_Item_00"
+      },
+      {
+        "Stage": 190,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0190_Item_00"
+      },
+      {
+        "Stage": 300,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0300_Item_00"
+      },
+      {
+        "Stage": 5,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0005_Item_00"
+      },
+      {
+        "Stage": 111,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0111_Item_00"
+      },
+      {
+        "Stage": 45,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0045_Item_00"
+      },
+      {
+        "Stage": 65,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0065_Item_00"
+      },
+      {
+        "Stage": 113,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0113_Item_00"
+      },
+      {
+        "Stage": 17,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0017_Item_00"
+      },
+      {
+        "Stage": 70,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0070_Item_00"
+      },
+      {
+        "Stage": 112,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0112_Item_00"
+      },
+      {
+        "Stage": 64,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0064_Item_00"
+      },
+      {
+        "Stage": 40,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0040_Item_00"
+      },
+      {
+        "Stage": 60,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueDiamondCity_00003648",
+        "FragmentName": "Fragment_Stage_0060_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "003648:Fallout4.esm",
+          "Alias": 36
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultAliasReadWhileSittingScript",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "IdleBookReadStart",
+                "Object": "0785F2:Fallout4.esm"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "ReadingPackages",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "06A698:Fallout4.esm"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 35
+  },
+  "Location": "002CEF:Fallout4.esm",
+  "TextDisplayGlobals": [
+    "043C28:Fallout4.esm",
+    "026A98:Fallout4.esm",
+    "043C79:Fallout4.esm",
+    "0D35FA:Fallout4.esm"
+  ],
+  "Filter": "Dialogue\\Diamond City\\",
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 5,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Nat tells Player about Nick Valentine's Office"
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Nat no longer asks what brought player into town"
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Asked Nat about the Institute"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Nat Introduction done"
+        }
+      ]
+    },
+    {
+      "Index": 12,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Pastor Clements no longer asks what brought you to Diamond City"
+        }
+      ]
+    },
+    {
+      "Index": 15,
+      "Unknown": 77,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Pastor Clements introduction done"
+        }
+      ]
+    },
+    {
+      "Index": 17,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Pastor Celements tells Player about Nick's Office"
+        }
+      ]
+    },
+    {
+      "Index": 20,
+      "Unknown": 186,
+      "LogEntries": [
+        {
+          "Flags": []
+        }
+      ]
+    },
+    {
+      "Index": 35,
+      "Unknown": 77,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Told Myrna you're a synth"
+        }
+      ]
+    },
+    {
+      "Index": 40,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Myrna"
+        }
+      ]
+    },
+    {
+      "Index": 45,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Myrna Nick scene played"
+        }
+      ]
+    },
+    {
+      "Index": 60,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Takahashi"
+        }
+      ]
+    },
+    {
+      "Index": 64,
+      "Unknown": 77,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "John Quest start"
+        }
+      ]
+    },
+    {
+      "Index": 65,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to John"
+        }
+      ]
+    },
+    {
+      "Index": 70,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Moe buys the world series bat"
+        }
+      ]
+    },
+    {
+      "Index": 90,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Nat"
+        }
+      ]
+    },
+    {
+      "Index": 100,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Solomon"
+        }
+      ]
+    },
+    {
+      "Index": 110,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Abbot"
+        }
+      ]
+    },
+    {
+      "Index": 111,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Said Geneva was a Synth"
+        }
+      ]
+    },
+    {
+      "Index": 112,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Said Geneva wasn't a Synth"
+        }
+      ]
+    },
+    {
+      "Index": 113,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Said Geneva may or may not be a Synth"
+        }
+      ]
+    },
+    {
+      "Index": 115,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Cathy"
+        }
+      ]
+    },
+    {
+      "Index": 120,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Ann Codman"
+        }
+      ]
+    },
+    {
+      "Index": 125,
+      "Unknown": 22,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Doctor Duff, Negative"
+        }
+      ]
+    },
+    {
+      "Index": 130,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Doctor Duff, Got Quest"
+        }
+      ]
+    },
+    {
+      "Index": 135,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Done with Doctor Duff's Quest"
+        }
+      ]
+    },
+    {
+      "Index": 140,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Arturo"
+        }
+      ]
+    },
+    {
+      "Index": 150,
+      "Unknown": 51,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Sheng"
+        }
+      ]
+    },
+    {
+      "Index": 160,
+      "Unknown": 105,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Rebecca"
+        }
+      ]
+    },
+    {
+      "Index": 165,
+      "Unknown": 132,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Rejected Ellie's quest"
+        }
+      ]
+    },
+    {
+      "Index": 170,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Ellie Perkins"
+        }
+      ]
+    },
+    {
+      "Index": 172,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "You asked Ellie Perkins for money"
+        }
+      ]
+    },
+    {
+      "Index": 175,
+      "Unknown": 132,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Ellie speech challenge"
+        }
+      ]
+    },
+    {
+      "Index": 180,
+      "Unknown": 111,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Cooke introduced himself"
+        }
+      ]
+    },
+    {
+      "Index": 190,
+      "Unknown": 34,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player Enters Dugout Inn"
+        }
+      ]
+    },
+    {
+      "Index": 195,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Science Center Intro Scene"
+        }
+      ]
+    },
+    {
+      "Index": 197,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Science Center Intro has played"
+        }
+      ]
+    },
+    {
+      "Index": 198,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Doctor Duff has forcegreeted"
+        }
+      ]
+    },
+    {
+      "Index": 199,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player has left Science Center after intro scene"
+        }
+      ]
+    },
+    {
+      "Index": 200,
+      "Unknown": 34,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Dugout Inn Intro Scene has Played"
+        }
+      ]
+    },
+    {
+      "Index": 210,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Sheng"
+        }
+      ]
+    },
+    {
+      "Index": 220,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Becky"
+        }
+      ]
+    },
+    {
+      "Index": 230,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Jessica"
+        }
+      ]
+    },
+    {
+      "Index": 240,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Polly"
+        }
+      ]
+    },
+    {
+      "Index": 250,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Mister Zwicky"
+        }
+      ]
+    },
+    {
+      "Index": 260,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Miss Edna"
+        }
+      ]
+    },
+    {
+      "Index": 270,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Miss Edna is now Missus Zwicky"
+        }
+      ]
+    },
+    {
+      "Index": 280,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Hawthorne"
+        }
+      ]
+    },
+    {
+      "Index": 290,
+      "Unknown": 47,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Eustace"
+        }
+      ]
+    },
+    {
+      "Index": 300,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Bought Housing Permit from Geneva"
+        }
+      ]
+    },
+    {
+      "Index": 500,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "MQ103 SetStage 30, Player knows about Valentine's Office"
+        }
+      ]
+    },
+    {
+      "Index": 600,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "MQ103 SetStage 100, player is told to find Nick Valentine"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "PlayerAlias",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "000007:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 1,
+      "Name": "ArturoAlias",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CB7:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 2,
+      "Name": "MyrnaAlias",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CBF:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "NatAlias",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F20:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 4,
+      "Name": "PastorAlias",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002EFA:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 5,
+      "Name": "Abbot",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F28:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 8,
+      "Name": "Takahashi",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CDA:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 9,
+      "Name": "John",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CCB:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 10,
+      "Name": "Moe",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CB2:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 11,
+      "Name": "DocCrocker",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CD6:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 12,
+      "Name": "Solomon",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CBB:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 13,
+      "Name": "Percy",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CC1:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 14,
+      "Name": "Becky",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CC6:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 16,
+      "Name": "Ellie",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "0222A2:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 17,
+      "Name": "Hawthorne",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F1C:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 18,
+      "Name": "NoodlePatron",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "004DEC:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 19,
+      "Name": "Cathy",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CCF:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 20,
+      "Name": "AnnCodman",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F0E:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 21,
+      "Name": "Duff",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002EF8:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 22,
+      "Name": "Sheng",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F02:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 23,
+      "Name": "MalcolmLatimer",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F10:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 24,
+      "Name": "HenryCooke",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "0399DD:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 25,
+      "Name": "Piper",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F1E:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 26,
+      "Name": "Polly",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002CD4:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 27,
+      "Name": "Wellingham",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002F22:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 28,
+      "Name": "Yefim",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "002EFE:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 30,
+      "Name": "Vadim",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "002EFC:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 32,
+      "Name": "DoctorSun",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "020B8E:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 33,
+      "Name": "Scarlett",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "04B240:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 34,
+      "Name": "Companion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked",
+        "OptionalAllScenes"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 0
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 36,
+      "Name": "Geneva",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "002F0A:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 37,
+      "Name": "ProfessorScara",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "0B2FC7:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 38,
+      "Name": "PaulPembroke",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled"
+      ],
+      "UniqueActor": "002F14:Fallout4.esm",
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0A7D2D:Fallout4.esm",
+      "VersionControl": 7453,
+      "Version2": 6,
+      "Quest": "003648:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "030E13:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 12,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "0057E4:Fallout4.esm",
+          "DialogGroup": "0ECA53:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "InterruptPercentage": 40,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Hey, newcomer. Free paper on the latest threat from the Institute."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x30E1422D6963D301"
+            }
+          ],
+          "StartScene": "017B27:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "030E14:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 12,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "030E13:Fallout4.esm",
+          "DialogGroup": "0ECA53:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "InterruptPercentage": 40,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You need this paper. Everything on the Institute the public needs to know."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "017B27:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

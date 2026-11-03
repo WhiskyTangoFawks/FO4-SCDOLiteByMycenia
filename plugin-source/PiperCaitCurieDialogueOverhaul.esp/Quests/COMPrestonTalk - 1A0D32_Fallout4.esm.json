@@ -1,0 +1,208 @@
+{
+  "FormKey": "1A0D32:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "COMPrestonTalk",
+  "Version2": 5,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "COMTalkQuestScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T5_Hatred",
+            "Object": "04B1C8:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CompanionActor",
+            "Object": "01A4D7:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T1_Infatuation",
+            "Object": "04B1C4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T4_Disdain",
+            "Object": "04B1C7:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T2_Admiration",
+            "Object": "04B1C5:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T3_Neutral",
+            "Object": "04B1C6:Fallout4.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_COMPrestonTalk_001A0D32",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_Preston",
+          "Object": "1A0D32:Fallout4.esm",
+          "Alias": 0
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_COMPrestonTalk_001A0D32",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Preston Talk/Relationship Scene"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "AllowRepeatedStages",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 30,
+    "Unused": 92
+  },
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x712D8E",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsID",
+        "ParameterOneRecord": "019FD9:Fallout4.esm",
+        "ParameterOneNumber": 106457
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 10,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Dismiss companion"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "Preston",
+      "Flags": [
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed",
+        "IsCompanion"
+      ],
+      "UniqueActor": "019FD9:Fallout4.esm",
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "1A0D43:Fallout4.esm",
+      "VersionControl": 7769,
+      "Quest": "1A0D32:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A301A:Fallout4.esm",
+          "MajorRecordFlagsRaw": 64,
+          "VersionControl": 10090,
+          "EditorID": "COMPrestonTalkRomanticGreets",
+          "Fallout4MajorRecordFlags": [
+            "0x40"
+          ],
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly",
+              "ChildInfosDontInheritResetData",
+              "ForceAllChildrenRandom",
+              "DoNotDoAllBeforeRepeating"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "Null",
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetInFaction",
+                "ParameterOneRecord": "023C01:Fallout4.esm",
+                "ParameterOneNumber": 146433
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionGlobal",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": "04B1C4:Fallout4.esm",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetValue",
+                "ParameterOneRecord": "0A1B81:Fallout4.esm",
+                "ParameterOneNumber": 662401
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x712D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetValue",
+                "ParameterOneRecord": "148DF6:Fallout4.esm",
+                "ParameterOneNumber": 1347062
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "0",
+          "MajorFlags": [
+            "InfoGroup"
+          ]
+        },
+        {
+          "FormKey": "1A301D:Fallout4.esm",
+          "VersionControl": 10090,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "1A301C:Fallout4.esm",
+          "SharedDialog": "0F61CE:Fallout4.esm",
+          "DialogGroup": "1A301A:Fallout4.esm",
+          "StartScene": "1A0D77:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

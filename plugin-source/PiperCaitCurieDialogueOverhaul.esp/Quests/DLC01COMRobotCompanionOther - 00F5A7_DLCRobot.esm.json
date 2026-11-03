@@ -1,0 +1,307 @@
+{
+  "FormKey": "00F5A7:DLCRobot.esm",
+  "VersionControl": 8290,
+  "EditorID": "DLC01COMRobotCompanionOther",
+  "Version2": 9,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "DLC01:DLC01CompanionUnlockScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "VoiceTypeFormlist",
+            "Object": "00F61C:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RobotCompanion",
+            "Object": "00F5A7:DLCRobot.esm",
+            "Alias": 0
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Followers",
+            "Object": "0289E4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01COMRobotCompanion_UnlockScene",
+            "Object": "00F61D:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CommandTarget",
+            "Object": "00F5A7:DLCRobot.esm",
+            "Alias": 4
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01_CompanionFailedToUnlock",
+            "Object": "008BF8:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01_Ability_Lockpicking",
+            "Object": "008BF6:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01EyebotInteractVFX",
+            "Object": "00F904:DLCRobot.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CommandActor",
+            "Object": "00F5A7:DLCRobot.esm",
+            "Alias": 3
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DLC01_Ability_Hacking",
+            "Object": "008BF5:DLCRobot.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionOth_0100F5A7",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_CommandTarget",
+          "Object": "00F5A7:DLCRobot.esm",
+          "Alias": 4
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_RobotCompanionOther",
+          "Object": "00F5A7:DLCRobot.esm",
+          "Alias": 0
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 80,
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionOth_0100F5A7",
+        "FragmentName": "Fragment_Stage_0080_Item_00"
+      },
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionOth_0100F5A7",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      },
+      {
+        "Stage": 90,
+        "Unknown2": 1,
+        "ScriptName": "DLC01:Fragments:Quests:QF_DLC01COMRobotCompanionOth_0100F5A7",
+        "FragmentName": "Fragment_Stage_0090_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "00F5A7:DLCRobot.esm",
+          "Alias": 0
+        },
+        "Scripts": [
+          {
+            "Name": "DLC01:DLC01RobotAliasDeathScript"
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "DLC01 Assaultron and Sentry Bot Companion"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "AddIdleTopicToHello",
+      "AllowRepeatedStages",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 70,
+    "Unused": 92
+  },
+  "Filter": "DLC01\\Companions\\",
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetInFaction",
+        "ParameterOneRecord": "0A1B85:Fallout4.esm",
+        "ParameterOneNumber": 662405
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Flags": [
+        "OR"
+      ],
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "06E5A2:Fallout4.esm",
+        "ParameterOneNumber": 452002
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Flags": [
+        "OR"
+      ],
+      "Unknown1": "0x000000",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "06E5A3:Fallout4.esm",
+        "ParameterOneNumber": 452003
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Unknown": 116
+    },
+    {
+      "Index": 10,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Unlock Command Target"
+        }
+      ]
+    },
+    {
+      "Index": 80,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Pickup Companion"
+        }
+      ]
+    },
+    {
+      "Index": 90,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Dismiss Companion"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "RobotCompanionOther",
+      "Flags": [
+        "Optional",
+        "QuestObject",
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "VoiceTypes": "00F61C:DLCRobot.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 1,
+      "Name": "Companion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 0
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 2,
+      "Name": "DogmeatCompanion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 5
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "CommandActor",
+      "Flags": [
+        "Optional"
+      ],
+      "VoiceTypes": "00F61C:DLCRobot.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 4,
+      "Name": "CommandTarget",
+      "Flags": [
+        "Optional"
+      ],
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "00F5B9:DLCRobot.esm",
+      "VersionControl": 8231,
+      "EditorID": "DLC01COMRobotCompanionOtherGreets",
+      "Version2": 1,
+      "Quest": "00F5A7:DLCRobot.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0113A3:DLCRobot.esm",
+          "VersionControl": 10284,
+          "Version2": 2,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "010E46:DLCRobot.esm",
+          "SharedDialog": "00F5BC:DLCRobot.esm",
+          "DialogGroup": "010E46:DLCRobot.esm",
+          "StartScene": "00F61B:DLCRobot.esm",
+          "ForcedAlias": 0,
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

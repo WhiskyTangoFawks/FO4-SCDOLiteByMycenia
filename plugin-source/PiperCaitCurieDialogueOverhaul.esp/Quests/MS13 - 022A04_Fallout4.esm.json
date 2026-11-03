@@ -1,0 +1,4304 @@
+{
+  "FormKey": "022A04:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "MS13",
+  "Version2": 9,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "MS13Script",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DmndColonialTaphouseOwnerFaction",
+            "Object": "0C8667:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ServicesDmndTaphouse",
+            "Object": "0F9387:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AmbushCrates",
+            "Object": "022A04:Fallout4.esm",
+            "Alias": 23
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DarcyPembroke",
+            "Object": "022A04:Fallout4.esm",
+            "Alias": 5
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PaulPembroke",
+            "Object": "022A04:Fallout4.esm",
+            "Alias": 1
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "nelsonAtAmbush",
+            "Object": "022A04:Fallout4.esm",
+            "Alias": 8
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "HouseKey",
+            "Object": "06A67F:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DiamondCityLocation",
+            "Object": "002CEF:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DiamondCityColonialTaphouseLocation",
+            "Object": "00396D:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "GoodneighborLocation",
+            "Object": "022610:Fallout4.esm"
+          }
+        ]
+      },
+      {
+        "Name": "defaultcounterquest",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptIntProperty",
+            "Name": "MyStage",
+            "Data": 550
+          },
+          {
+            "MutagenObjectType": "ScriptIntProperty",
+            "Name": "TargetValue",
+            "Data": 4
+          }
+        ]
+      },
+      {
+        "Name": "DefaultCrowdEventManager",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RefCollection",
+            "Object": "022A04:Fallout4.esm",
+            "Alias": 26
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CrowdEventMember",
+            "Object": "107D9A:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "FindOrigin",
+            "Object": "022A04:Fallout4.esm",
+            "Alias": 0
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_MS13_00022A04",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13DarcyPaulHello",
+          "Object": "02B6E6:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13IntroSceneCookeMarker01",
+          "Object": "03A06A:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "IntroPaulAttack",
+          "Object": "047FB0:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_TaphouseLocation",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 33
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_HenryCooke",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 0
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13ChemDealLatimerMarker",
+          "Object": "03FE3E:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CAmbushCooke",
+          "Object": "042DD7:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "LL_Caps_Reward_Small_and_Change",
+          "Object": "067380:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "DepressedAnims",
+          "Object": "03D292:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13EDivideSpoils",
+          "Object": "045847:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13EDivideSpoilsCooke",
+          "Object": "045849:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13IntroAfterFight",
+          "Object": "1CC899:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pDN047FourLeafSecurityPassword",
+          "Object": "1793DD:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "GameDaysPassed",
+          "Object": "000039:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CAmbushLooping",
+          "Object": "042DD5:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_NelsonLatimer",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 3
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13BConfrontCookePaulMarker001",
+          "Object": "08213F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "DN047_FourLeafSecurityPassword",
+          "Object": "0F9338:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CTravelChatterCookePaul",
+          "Object": "198CBC:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_AmbushGuard03",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 11
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CookeIntro",
+          "Object": "03A63C:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13PaulPembrokeRichOutfit",
+          "Object": "19A7F0:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13IntroFightScene",
+          "Object": "1CC898:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13IntroScene",
+          "Object": "039A36:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13SpecialCombatFaction",
+          "Object": "0433CB:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13BConfrontCookeScene",
+          "Object": "03D2C8:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "CrimeDiamondCity",
+          "Object": "002CB4:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13EDivideSpoilsPaulLootCrates",
+          "Object": "198CB9:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_AmbushGuard02",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 10
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "LL_Caps_Reward_Medium_and_Change",
+          "Object": "06737F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13SideB",
+          "Object": "0433CA:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CAmbushGibsonCookeStart",
+          "Object": "0433C5:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13ConfrontationCombatFaction",
+          "Object": "1D2776:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13SideA",
+          "Object": "0433C8:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_DarcyPembroke",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 5
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "FourLeafFishpackingMapMarkerRef",
+          "Object": "02BC07:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13BAfterConfrontationPaul",
+          "Object": "0880D9:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13MarowskiRevenge",
+          "Object": "084E40:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "RadioDCMS13Ready",
+          "Object": "176DDA:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CAmbushPaul",
+          "Object": "092341:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13ChemDealLatimerMarker001",
+          "Object": "03FE3E:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "CA__CustomEvent_Selfish",
+          "Object": "0A1B23:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_Marowski",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 4
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_NelsonAtAmbush",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 8
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_PaulPembroke",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 1
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13BConfrontCookeNelsonIntro",
+          "Object": "1954A3:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Caps001",
+          "Object": "00000F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_AmbushGuard01",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 9
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "PairedAttack",
+          "Object": "1A2FB8:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "LatimerCrimeFaction",
+          "Object": "1E889D:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_Gibson",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 7
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_TaphousePatronsIntro",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 26
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_CookeNote",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 32
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CAmbushCookeKillGibson",
+          "Object": "045835:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MS13CookeNote",
+          "Object": "044279:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "IntroCookeAttack",
+          "Object": "1D1EA2:Fallout4.esm"
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 515,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0515_Item_00"
+      },
+      {
+        "Stage": 430,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0430_Item_00"
+      },
+      {
+        "Stage": 290,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0290_Item_00"
+      },
+      {
+        "Stage": 810,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0810_Item_00"
+      },
+      {
+        "Stage": 580,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0580_Item_00"
+      },
+      {
+        "Stage": 160,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0160_Item_00"
+      },
+      {
+        "Stage": 460,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0460_Item_00"
+      },
+      {
+        "Stage": 320,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0320_Item_00"
+      },
+      {
+        "Stage": 840,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0840_Item_00"
+      },
+      {
+        "Stage": 550,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0550_Item_00"
+      },
+      {
+        "Stage": 1000,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_1000_Item_00"
+      },
+      {
+        "Stage": 480,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0480_Item_00"
+      },
+      {
+        "Stage": 210,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0210_Item_00"
+      },
+      {
+        "Stage": 380,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0380_Item_00"
+      },
+      {
+        "Stage": 18,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0018_Item_00"
+      },
+      {
+        "Stage": 25,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0025_Item_00"
+      },
+      {
+        "Stage": 25,
+        "StageIndex": 1,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0025_Item_01"
+      },
+      {
+        "Stage": 790,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0790_Item_00"
+      },
+      {
+        "Stage": 2000,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_2000_Item_00"
+      },
+      {
+        "Stage": 660,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0660_Item_00"
+      },
+      {
+        "Stage": 370,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0370_Item_00"
+      },
+      {
+        "Stage": 220,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0220_Item_00"
+      },
+      {
+        "Stage": 510,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0510_Item_00"
+      },
+      {
+        "Stage": 760,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0760_Item_00"
+      },
+      {
+        "Stage": 190,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0190_Item_00"
+      },
+      {
+        "Stage": 30,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0030_Item_00"
+      },
+      {
+        "Stage": 820,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0820_Item_00"
+      },
+      {
+        "Stage": 815,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0815_Item_00"
+      },
+      {
+        "Stage": 815,
+        "StageIndex": 1,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0815_Item_01"
+      },
+      {
+        "Stage": 5,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0005_Item_00"
+      },
+      {
+        "Stage": 710,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0710_Item_00"
+      },
+      {
+        "Stage": 325,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0325_Item_00"
+      },
+      {
+        "Stage": 450,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0450_Item_00"
+      },
+      {
+        "Stage": 485,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0485_Item_00"
+      },
+      {
+        "Stage": 665,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0665_Item_00"
+      },
+      {
+        "Stage": 340,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0340_Item_00"
+      },
+      {
+        "Stage": 860,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0860_Item_00"
+      },
+      {
+        "Stage": 280,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0280_Item_00"
+      },
+      {
+        "Stage": 20,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0020_Item_00"
+      },
+      {
+        "Stage": 540,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0540_Item_00"
+      },
+      {
+        "Stage": 310,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0310_Item_00"
+      },
+      {
+        "Stage": 830,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0830_Item_00"
+      },
+      {
+        "Stage": 700,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0700_Item_00"
+      },
+      {
+        "Stage": 180,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0180_Item_00"
+      },
+      {
+        "Stage": 560,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0560_Item_00"
+      },
+      {
+        "Stage": 390,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0390_Item_00"
+      },
+      {
+        "Stage": 390,
+        "StageIndex": 1,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0390_Item_01"
+      },
+      {
+        "Stage": 770,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0770_Item_00"
+      },
+      {
+        "Stage": 100,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0100_Item_00"
+      },
+      {
+        "Stage": 805,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0805_Item_00"
+      },
+      {
+        "Stage": 15,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0015_Item_00"
+      },
+      {
+        "Stage": 495,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0495_Item_00"
+      },
+      {
+        "Stage": 335,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0335_Item_00"
+      },
+      {
+        "Stage": 260,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0260_Item_00"
+      },
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      },
+      {
+        "Stage": 1,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0001_Item_00"
+      },
+      {
+        "Stage": 800,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0800_Item_00"
+      },
+      {
+        "Stage": 195,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0195_Item_00"
+      },
+      {
+        "Stage": 200,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0200_Item_00"
+      },
+      {
+        "Stage": 490,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0490_Item_00"
+      },
+      {
+        "Stage": 500,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0500_Item_00"
+      },
+      {
+        "Stage": 330,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0330_Item_00"
+      },
+      {
+        "Stage": 680,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0680_Item_00"
+      },
+      {
+        "Stage": 850,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0850_Item_00"
+      },
+      {
+        "Stage": 420,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0420_Item_00"
+      },
+      {
+        "Stage": 22,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0022_Item_00"
+      },
+      {
+        "Stage": 305,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0305_Item_00"
+      },
+      {
+        "Stage": 230,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0230_Item_00"
+      },
+      {
+        "Stage": 435,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0435_Item_00"
+      },
+      {
+        "Stage": 300,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0300_Item_00"
+      },
+      {
+        "Stage": 720,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0720_Item_00"
+      },
+      {
+        "Stage": 400,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0400_Item_00"
+      },
+      {
+        "Stage": 410,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0410_Item_00"
+      },
+      {
+        "Stage": 250,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0250_Item_00"
+      },
+      {
+        "Stage": 12,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0012_Item_00"
+      },
+      {
+        "Stage": 440,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0440_Item_00"
+      },
+      {
+        "Stage": 650,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0650_Item_00"
+      },
+      {
+        "Stage": 750,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0750_Item_00"
+      },
+      {
+        "Stage": 690,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MS13_00022A04",
+        "FragmentName": "Fragment_Stage_0690_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 0
+        },
+        "Scripts": [
+          {
+            "Name": "MS13IntroBrawlAliasScript",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "UnarmedHuman",
+                "Object": "0C2C27:Fallout4.esm"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "Opponent",
+                "Object": "022A04:Fallout4.esm",
+                "Alias": 1
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnAggro",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 400
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "CombatStateToCheckFor",
+                "Data": 1
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 305
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 250
+              }
+            ]
+          },
+          {
+            "Name": "defaultaliasonunload",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 550
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 770
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "UseOnDyingInstead"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 420
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 250
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 330
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "ShowTraces",
+                "Data": true
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnHit",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 400
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 325
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 250
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 1
+        },
+        "Scripts": [
+          {
+            "Name": "MS13IntroBrawlAliasScript",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "UnarmedHuman",
+                "Object": "0C2C27:Fallout4.esm"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "Opponent",
+                "Object": "022A04:Fallout4.esm",
+                "Alias": 0
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 800
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 840
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 750
+              }
+            ]
+          },
+          {
+            "Name": "defaultaliasonunload",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 800
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 860
+              }
+            ]
+          },
+          {
+            "Name": "defaultAliasOnUnloadA",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 800
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 790
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 750
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnHit",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerHitOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 400
+              },
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "HitByAliases",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "022A04:Fallout4.esm",
+                    "Alias": 0
+                  }
+                ]
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 290
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 250
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 3
+        },
+        "Scripts": [
+          {
+            "Name": "defaultaliasonunload",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 515
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "TurnOffWhenDead",
+                "Data": true
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 510
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 500
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TurnOffStage",
+                "Data": 800
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 515
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 450
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 7
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultAliasOnAggro",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "TargetingOrHitByOneOfTheseFactions",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "0433C8:Fallout4.esm"
+                  }
+                ]
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 450
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 500
+              }
+            ]
+          },
+          {
+            "Name": "DefaultAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "UseOnDyingInstead",
+                "Data": true
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 680
+              }
+            ]
+          },
+          {
+            "Name": "defaultaliasonunload",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 650
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "TurnOffWhenDead",
+                "Data": true
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 690
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 8
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultAliasOnAggro",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "TargetingOrHitByOneOfTheseFactions",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "0433C8:Fallout4.esm"
+                  }
+                ]
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 450
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 500
+              }
+            ]
+          },
+          {
+            "Name": "defaultaliasonunload",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 500
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "TurnOffWhenDead",
+                "Data": true
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 510
+              }
+            ]
+          },
+          {
+            "Name": "DefaultCounterQuestIncOnDeath"
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 9
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultCounterQuestIncOnDeath"
+          },
+          {
+            "Name": "DefaultAliasOnAggro",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "TargetingOrHitByOneOfTheseFactions",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "0433C8:Fallout4.esm"
+                  }
+                ]
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 450
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 10
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultCounterQuestIncOnDeath"
+          },
+          {
+            "Name": "DefaultAliasOnAggro",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "TargetingOrHitByOneOfTheseFactions",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "0433C8:Fallout4.esm"
+                  }
+                ]
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 450
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 11
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultCounterQuestIncOnDeath"
+          },
+          {
+            "Name": "DefaultAliasOnAggro",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "TargetingOrHitByOneOfTheseFactions",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "0433C8:Fallout4.esm"
+                  }
+                ]
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "PlayerOnly"
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 450
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 16
+        },
+        "Scripts": [
+          {
+            "Name": "defaultaliasonread",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 700
+              }
+            ]
+          },
+          {
+            "Name": "defaultaliasoncontainerchangedto",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 665
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "022A04:Fallout4.esm",
+          "Alias": 32
+        },
+        "Scripts": [
+          {
+            "Name": "defaultaliasonread",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 435
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Diamond City Blues"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled"
+    ],
+    "Priority": 45,
+    "Unused": 92,
+    "Type": "SideQuests"
+  },
+  "QuestCompletionXp": "22F0FE:Fallout4.esm",
+  "Filter": "Side Quests\\",
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 1,
+      "Unknown": 29,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player gains access to chems lab (at any time)"
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Flags": [
+        "RunOnStart"
+      ],
+      "Unknown": 44,
+      "LogEntries": [
+        {
+          "Flags": []
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000014:Fallout4.esm",
+                "ParameterTwoNumber": 20
+              }
+            }
+          ],
+          "Note": "Trigger intro"
+        }
+      ]
+    },
+    {
+      "Index": 12,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Start Paul/Cooke fight"
+        }
+      ]
+    },
+    {
+      "Index": 15,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Trigger synced animation"
+        }
+      ]
+    },
+    {
+      "Index": 18,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Intro - stop combat"
+        }
+      ]
+    },
+    {
+      "Index": 20,
+      "Unknown": 103,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Paul heads for the exit"
+        }
+      ]
+    },
+    {
+      "Index": 22,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Real combat started during intro fight scene - stop it"
+        }
+      ]
+    },
+    {
+      "Index": 25,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Intro scene done"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetInCell",
+                "ParameterOneRecord": "001E51:Fallout4.esm",
+                "ParameterOneNumber": 7761
+              }
+            }
+          ],
+          "Note": "set stage 100 if player not in Taphouse"
+        }
+      ]
+    },
+    {
+      "Index": 30,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Start Cooke intro scene"
+        }
+      ]
+    },
+    {
+      "Index": 60,
+      "Unknown": 155,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Darcy (intro)"
+        }
+      ]
+    },
+    {
+      "Index": 100,
+      "Unknown": 111,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player exits Colonial Taphouse after intro scene"
+        }
+      ]
+    },
+    {
+      "Index": 150,
+      "Unknown": 30,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Paul asks player for help"
+        }
+      ]
+    },
+    {
+      "Index": 160,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "A: Paul agrees to pay extra"
+        }
+      ]
+    },
+    {
+      "Index": 180,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "A: Player agrees to help"
+        }
+      ]
+    },
+    {
+      "Index": 190,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "A: Paul pays player initial reward"
+        }
+      ]
+    },
+    {
+      "Index": 195,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "A: Paul pays extra reward after confrontation"
+        }
+      ]
+    },
+    {
+      "Index": 200,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "A: Meeting Pembroke - DONE"
+        }
+      ]
+    },
+    {
+      "Index": 210,
+      "Unknown": 146,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) A: Player goes to talk to Cooke alone",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Paul Pembroke has asked me to get Henry Cooke to stop seeing his wife Darcy. He said I should use any means necessary."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 220,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) A: Player and Paul go to talk to Cooke together",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Paul Pembroke has asked me to help get Henry Cooke to stop seeing his wife Darcy."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 230,
+      "Unknown": 146,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "A: Player refuses to help"
+        }
+      ]
+    },
+    {
+      "Index": 250,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: player enters Taphouse"
+        }
+      ]
+    },
+    {
+      "Index": 260,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Nelson intro done"
+        }
+      ]
+    },
+    {
+      "Index": 280,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Paul dies during confrontation"
+        }
+      ]
+    },
+    {
+      "Index": 290,
+      "Unknown": 61,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Cooke shoots Pembroke"
+        }
+      ]
+    },
+    {
+      "Index": 295,
+      "Unknown": 29,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: peaceful resolution"
+        }
+      ]
+    },
+    {
+      "Index": 300,
+      "Unknown": 138,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Intimidate Cooke - DONE"
+        }
+      ]
+    },
+    {
+      "Index": 305,
+      "Unknown": 147,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Combat starts"
+        }
+      ]
+    },
+    {
+      "Index": 310,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Cooke hostile to Paul"
+        }
+      ]
+    },
+    {
+      "Index": 320,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Cooke hostile to player"
+        }
+      ]
+    },
+    {
+      "Index": 325,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Cooke hit by player"
+        }
+      ]
+    },
+    {
+      "Index": 330,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) ANY: Cooke dies"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000D2:Fallout4.esm",
+                "ParameterTwoNumber": 210
+              }
+            }
+          ],
+          "Note": "Player went with Paul",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "While confronting Henry Cooke about his affair with Paul Pembroke's wife Darcy, Cooke ended up dead. I may as well search Cooke for whatever he's carrying."
+          }
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000D2:Fallout4.esm",
+                "ParameterTwoNumber": 210
+              }
+            }
+          ],
+          "Note": "Player went alone - report back to Paul",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I ended up killing Henry Cooke while after confronting him about his affair with Paul Pembroke's wife Darcy. I may as well search Cooke for whatever he's carrying."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 335,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Note placed on Cooke's body"
+        }
+      ]
+    },
+    {
+      "Index": 340,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Variant B1 - Paul confronts Cooke alone and dies"
+        }
+      ]
+    },
+    {
+      "Index": 345,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: MS13BAfterConfrontationPaul finishes without player interrupting"
+        }
+      ]
+    },
+    {
+      "Index": 350,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Cooke proposes his plan"
+        }
+      ]
+    },
+    {
+      "Index": 360,
+      "Unknown": 44,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Cooke has revealed plan"
+        }
+      ]
+    },
+    {
+      "Index": 370,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Player tells Paul about Cooke confrontation"
+        }
+      ]
+    },
+    {
+      "Index": 380,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Player leaves Taphouse during the fight"
+        }
+      ]
+    },
+    {
+      "Index": 390,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Player leaves Taphouse after confrontation"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001C7:Fallout4.esm",
+                "ParameterTwoNumber": 455
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 400,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Confront Cooke - DONE"
+        }
+      ]
+    },
+    {
+      "Index": 410,
+      "Unknown": 146,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "B: Player refuses Cooke's plan"
+        }
+      ]
+    },
+    {
+      "Index": 420,
+      "Unknown": 146,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) B: Player agrees to Cooke's plan",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "After confronting Henry Cooke about his affair with Darcy Pembroke, he offered to help ambush a chem deal he knows about."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 430,
+      "Unknown": 51,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) B: Player finds Cooke's note",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I found a note on Henry Cooke's body after he died during the confrontation about Darcy Pembroke. I should find out what he was up to."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 435,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) B: Player reads Cooke's note",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I found a note on Henry Cooke's body referring to a chem deal he was arranging with Nelson Latimer. This is a good opportunity to ambush the deal and take everything."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 440,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Variant C4 - Latimer is killed by Trish etc."
+        }
+      ]
+    },
+    {
+      "Index": 450,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Setup Latimer Ambush"
+        }
+      ]
+    },
+    {
+      "Index": 455,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Paul goes with player to ambush"
+        }
+      ]
+    },
+    {
+      "Index": 460,
+      "Unknown": 4,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            }
+          ],
+          "Note": "C: Start looping ambush scene"
+        }
+      ]
+    },
+    {
+      "Index": 480,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            }
+          ],
+          "Note": "C: Cooke in position, start Cooke ambush scene"
+        }
+      ]
+    },
+    {
+      "Index": 485,
+      "Unknown": 110,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 0,
+                "Function": "GetDead"
+              }
+            }
+          ],
+          "Note": "C: Paul in position (only matters if Cooke is dead)"
+        }
+      ]
+    },
+    {
+      "Index": 490,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Intro scene done, move into attack position"
+        }
+      ]
+    },
+    {
+      "Index": 495,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Paul and Cooke start shooting"
+        }
+      ]
+    },
+    {
+      "Index": 500,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Combat starts - no more talking"
+        }
+      ]
+    },
+    {
+      "Index": 510,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Nelson escapes (unloads)"
+        }
+      ]
+    },
+    {
+      "Index": 515,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "C: Nelson dies in ambush"
+        }
+      ]
+    },
+    {
+      "Index": 540,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish interrogation starts"
+        }
+      ]
+    },
+    {
+      "Index": 550,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) D: Everybody dead (except Trish)",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I ambushed a meeting between Nelson Latimer and a chem supplier named Trish. I should find out what Trish knows before deciding what to do with her."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 560,
+      "Unknown": 16,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Make Trish non-essential"
+        }
+      ]
+    },
+    {
+      "Index": 580,
+      "Unknown": 29,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Cooke starts combat with Trish"
+        }
+      ]
+    },
+    {
+      "Index": 600,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish offers to give up chems lab"
+        }
+      ]
+    },
+    {
+      "Index": 650,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish interrogation done"
+        }
+      ]
+    },
+    {
+      "Index": 660,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish interrogation - kill her"
+        }
+      ]
+    },
+    {
+      "Index": 665,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Get Trish's Note"
+        }
+      ]
+    },
+    {
+      "Index": 670,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish - let her live"
+        }
+      ]
+    },
+    {
+      "Index": 680,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish killed"
+        }
+      ]
+    },
+    {
+      "Index": 690,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "D: Trish escapes (unloads)"
+        }
+      ]
+    },
+    {
+      "Index": 700,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) E: Learn location of chems lab"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0002C6:Fallout4.esm",
+                "ParameterTwoNumber": 710
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I found a note on Trish's body referring to the location of a chem lab belonging to a gangster named Marowski."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 710,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) E: Trish tells player location of plant",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "While interrogating Trish, I learned the location of a chem lab belonging to a gangster named Marowski."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 720,
+      "Unknown": 51,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) E: Trish gives password",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "While interrogating Trish, I learned the location of a chem lab belonging to a gangster named Marowski. She also told me the password that will shut down the lab's security system."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 750,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: Divide spoils - START"
+        }
+      ]
+    },
+    {
+      "Index": 755,
+      "Unknown": 120,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) F: Divide spoils quest log entry",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "After ambushing the chem deal between Nelson Latimer and Marowski's goons, it's time to divide the spoils between Paul and me."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 760,
+      "Unknown": 106,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: Cooke says he's leaving town"
+        }
+      ]
+    },
+    {
+      "Index": 770,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Cooke \"vanishes\" after ambush"
+        }
+      ]
+    },
+    {
+      "Index": 790,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "F09EE0:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1576050400,
+                "ParameterTwoString": "::DivideSpoils_var"
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000320:Fallout4.esm",
+                "ParameterTwoNumber": 800
+              }
+            }
+          ],
+          "Note": "F - Player leaves ambush area without resolving divide spoils"
+        }
+      ]
+    },
+    {
+      "Index": 800,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) F: Ambush - DONE - clean up"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 1,
+                "Function": "GetDead"
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0002BC:Fallout4.esm",
+                "ParameterTwoNumber": 700
+              }
+            }
+          ],
+          "Note": "Paul dead, chem lab not done",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I succeeded in ambushing the chem deal between Nelson Latimer and some of Marowski's goons. I may get even more from cleaning out Marowski's chem lab."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 805,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: Player pays Paul half of Nelson's money as agreed (in 815)"
+        }
+      ]
+    },
+    {
+      "Index": 810,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) F: 50-50 split"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Paul and I agreed to split the take from the chem deal ambush 50-50. I may get more from cleaning out Marowski's lab."
+          }
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Paul and I agreed to split the take from the chem deal ambush 50-50."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 815,
+      "Unknown": 147,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: 70-30 split - overrides 810 (which may also be set)"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 8,
+                "Function": "GetDead"
+              }
+            }
+          ]
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I persuaded Paul Pembroke that we should split the take from the chem ambush 70-30. I may get even more from cleaning out Marowski's chem lab."
+          }
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I persuaded Paul Pembroke that we should split the take from the chem ambush 70-30."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 816,
+      "Unknown": 24,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: 70-30 split plus Nelson dead = player owes Paul money"
+        }
+      ]
+    },
+    {
+      "Index": 820,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) F: Paul agrees to let the player have everything"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I persuaded Paul Pembroke that I should get the entire take from the chem deal ambush. I may get even more from cleaning out Marowski's lab."
+          }
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000001:Fallout4.esm",
+                "ParameterTwoNumber": 1
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I persuaded Paul Pembroke that I should get the entire take from the chem deal ambush."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 830,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) F: Paul fights player",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Paul didn't like how I wanted to split the take from the chem deal ambush, so he attacked me. I have no choice now but to kill him."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 840,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: Paul dies before \"Divide spoils\" is done"
+        }
+      ]
+    },
+    {
+      "Index": 850,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "F: Paul loots his share of the chems"
+        }
+      ]
+    },
+    {
+      "Index": 860,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "F08530:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1576043824,
+                "ParameterTwoString": "::CookeHouseStatus_var"
+              }
+            }
+          ],
+          "Note": "F: Paul changes outfit after getting money"
+        }
+      ]
+    },
+    {
+      "Index": 900,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "(LOG) G: Player gains access to chem lab",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I've gained access to Marowski's chem lab at the Four Leaf Fishpacking Plant."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 1000,
+      "LogEntries": [
+        {
+          "Flags": [
+            "CompleteQuest"
+          ],
+          "Note": "G: Player completes quest"
+        }
+      ]
+    },
+    {
+      "Index": 2000,
+      "Unknown": 116,
+      "LogEntries": [
+        {
+          "Flags": [
+            "FailQuest"
+          ],
+          "Note": "QUEST FAILED - for any reason"
+        }
+      ]
+    }
+  ],
+  "Objectives": [
+    {
+      "Index": 10,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Intimidate Henry Cooke"
+      },
+      "Targets": [
+        {}
+      ]
+    },
+    {
+      "Index": 11,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Help Paul Pembroke intimidate Henry Cooke"
+      },
+      "Targets": [
+        {}
+      ]
+    },
+    {
+      "Index": 15,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Talk to Henry Cooke"
+      },
+      "Targets": [
+        {}
+      ]
+    },
+    {
+      "Index": 20,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Kill Henry Cooke"
+      }
+    },
+    {
+      "Index": 25,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Report back to Paul Pembroke"
+      },
+      "Targets": [
+        {
+          "AliasID": 1
+        }
+      ]
+    },
+    {
+      "Index": 30,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Search Cooke's body"
+      },
+      "Targets": [
+        {}
+      ]
+    },
+    {
+      "Index": 40,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Read Cooke's Note"
+      }
+    },
+    {
+      "Index": 100,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Ambush Nelson Latimer's chem deal"
+      },
+      "Targets": [
+        {
+          "AliasID": 8,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 14,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 490.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 0,
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 14,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 490.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001C7:Fallout4.esm",
+                "ParameterTwoNumber": 455
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 1,
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 7,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000226:Fallout4.esm",
+                "ParameterTwoNumber": 550
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "IsBleedingOut",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 8,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000226:Fallout4.esm",
+                "ParameterTwoNumber": 550
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 9,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000226:Fallout4.esm",
+                "ParameterTwoNumber": 550
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 10,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000226:Fallout4.esm",
+                "ParameterTwoNumber": 550
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 11,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0001F4:Fallout4.esm",
+                "ParameterTwoNumber": 500
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000226:Fallout4.esm",
+                "ParameterTwoNumber": 550
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 150,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Interrogate Trish"
+      },
+      "Targets": [
+        {
+          "AliasID": 7
+        }
+      ]
+    },
+    {
+      "Index": 160,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Kill Trish"
+      },
+      "Targets": [
+        {
+          "AliasID": 7
+        }
+      ]
+    },
+    {
+      "Index": 170,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Search Trish"
+      },
+      "Targets": [
+        {
+          "AliasID": 7
+        }
+      ]
+    },
+    {
+      "Index": 180,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Read Trish's Note"
+      },
+      "Targets": [
+        {
+          "AliasID": 16
+        }
+      ]
+    },
+    {
+      "Index": 200,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Divide the spoils"
+      },
+      "Targets": [
+        {
+          "AliasID": 1
+        }
+      ]
+    },
+    {
+      "Index": 220,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Gain access to Marowski's chems lab"
+      },
+      "Targets": [
+        {
+          "AliasID": 13,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 13,
+                "Function": "GetLocked",
+                "Unknown2": 31276
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0002D0:Fallout4.esm",
+                "ParameterTwoNumber": 720
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 27,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "QuestAlias",
+                "Unknown3": 29,
+                "Function": "GetOpenState",
+                "Unknown2": 31276
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 27,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetInCurrentLocation",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "042811:Fallout4.esm",
+                "ParameterOneNumber": 272401
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "HenryCooke",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "0399DD:Fallout4.esm",
+      "CombatOverridePackageList": "0FAEDC:Fallout4.esm",
+      "Factions": [
+        "0433CB:Fallout4.esm"
+      ],
+      "PackageData": [
+        "19755A:Fallout4.esm",
+        "045846:Fallout4.esm",
+        "197BBC:Fallout4.esm",
+        "197557:Fallout4.esm",
+        "1954AD:Fallout4.esm",
+        "03FE47:Fallout4.esm",
+        "1954A9:Fallout4.esm",
+        "03D2CC:Fallout4.esm",
+        "0815A3:Fallout4.esm",
+        "03AD4D:Fallout4.esm",
+        "03A06E:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 1,
+      "Name": "PaulPembroke",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "002F14:Fallout4.esm",
+      "CombatOverridePackageList": "0FAEDC:Fallout4.esm",
+      "Factions": [
+        "0433CB:Fallout4.esm"
+      ],
+      "PackageData": [
+        "045845:Fallout4.esm",
+        "092346:Fallout4.esm",
+        "197BBD:Fallout4.esm",
+        "197559:Fallout4.esm",
+        "198BC3:Fallout4.esm",
+        "03FE48:Fallout4.esm",
+        "0880D5:Fallout4.esm",
+        "04D2CC:Fallout4.esm",
+        "03D2C9:Fallout4.esm",
+        "03A06F:Fallout4.esm",
+        "194465:Fallout4.esm",
+        "03E568:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 2,
+      "Name": "MortimerLatimer",
+      "Flags": [
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "002F10:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "NelsonLatimer",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "002F12:Fallout4.esm",
+      "PackageData": [
+        "03FE44:Fallout4.esm",
+        "1954A6:Fallout4.esm",
+        "03FE43:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 4,
+      "Name": "Marowski",
+      "Flags": [
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "0226E2:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 5,
+      "Name": "DarcyPembroke",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "002F18:Fallout4.esm",
+      "PackageData": [
+        "03D2CB:Fallout4.esm",
+        "03A06D:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 28,
+      "Name": "PetePembroke",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowDead"
+      ],
+      "UniqueActor": "002F15:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 7,
+      "Name": "Trish",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowDead",
+        "AllowDisabled"
+      ],
+      "UniqueActor": "03FE41:Fallout4.esm",
+      "CombatOverridePackageList": "0FAEDC:Fallout4.esm",
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "PackageData": [
+        "045838:Fallout4.esm",
+        "0433C7:Fallout4.esm",
+        "03FE45:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 8,
+      "Name": "nelsonAtAmbush",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional"
+      ],
+      "Items": [
+        {
+          "Item": {
+            "Item": "01DB7B:Fallout4.esm",
+            "Count": 4
+          }
+        }
+      ],
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "PackageData": [
+        "045839:Fallout4.esm",
+        "19A7F1:Fallout4.esm",
+        "03FE44:Fallout4.esm"
+      ],
+      "VoiceTypes": "002F12:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 12,
+      "Name": "AmbushTrishMarker",
+      "Flags": [],
+      "ForcedReference": "03FE40:Fallout4.esm",
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 20,
+      "Name": "AmbushGuardMarker01",
+      "Flags": [],
+      "ForcedReference": "092343:Fallout4.esm",
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 21,
+      "Name": "AmbushGuardMarker02",
+      "Flags": [],
+      "ForcedReference": "092344:Fallout4.esm",
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 22,
+      "Name": "AmbushGuardMarker03",
+      "Flags": [],
+      "ForcedReference": "092345:Fallout4.esm",
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 9,
+      "Name": "AmbushGuard01",
+      "Flags": [
+        "InitiallyDisabled",
+        "CreateRefTemp"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "042DDC:Fallout4.esm",
+        "AliasID": 12
+      },
+      "LinkedAliases": [
+        {
+          "Keyword": "03F76F:Fallout4.esm",
+          "AliasID": 20
+        }
+      ],
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 10,
+      "Name": "AmbushGuard02",
+      "Flags": [
+        "InitiallyDisabled",
+        "CreateRefTemp"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "042DDC:Fallout4.esm",
+        "AliasID": 12
+      },
+      "LinkedAliases": [
+        {
+          "Keyword": "03F76F:Fallout4.esm",
+          "AliasID": 20
+        }
+      ],
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 11,
+      "Name": "AmbushGuard03",
+      "Flags": [
+        "InitiallyDisabled",
+        "CreateRefTemp"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "042DDC:Fallout4.esm",
+        "AliasID": 12
+      },
+      "LinkedAliases": [
+        {
+          "Keyword": "03F76F:Fallout4.esm",
+          "AliasID": 22
+        }
+      ],
+      "Factions": [
+        "0433CA:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 31,
+      "Name": "ChemLabLocation",
+      "Flags": [
+        "AllowCleared"
+      ],
+      "SpecificLocation": "042811:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 13,
+      "Name": "ChemLabTerminal",
+      "Flags": [],
+      "Location": {
+        "AliasID": 31,
+        "RefType": "02CDC8:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 27,
+      "Name": "ChemLabDoor",
+      "Flags": [],
+      "Location": {
+        "AliasID": 31,
+        "RefType": "02CDCA:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 29,
+      "Name": "ChemLabSecretDoor",
+      "Flags": [],
+      "Location": {
+        "AliasID": 31,
+        "RefType": "02CDCC:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 14,
+      "Name": "AmbushObjectiveMarker",
+      "Flags": [],
+      "ForcedReference": "03FE46:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 17,
+      "Name": "HoldingCellMarker",
+      "Flags": [],
+      "ForcedReference": "08A206:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 16,
+      "Name": "TrishNote",
+      "Flags": [
+        "QuestObject",
+        "NoPickpocket"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "04427A:Fallout4.esm",
+        "AliasID": 7,
+        "Create": "-32768"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 32,
+      "Name": "CookeNote",
+      "Flags": [
+        "QuestObject",
+        "InitiallyDisabled",
+        "NoPickpocket"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "044279:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 18,
+      "Name": "MarowskiPhotoPaul",
+      "Flags": [
+        "QuestObject"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "08A1FB:Fallout4.esm",
+        "AliasID": 17
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 19,
+      "Name": "MarowskiPhotoCooke",
+      "Flags": [
+        "QuestObject"
+      ],
+      "CreateReferenceToObject": {
+        "Object": "08A1FB:Fallout4.esm",
+        "AliasID": 17
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 24,
+      "Name": "MS13LatimerAmbushLocation",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "AllowCleared"
+      ],
+      "SpecificLocation": "013AD5:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestCollectionAlias",
+      "Collection": [
+        {
+          "AliasID": 23,
+          "MaxInitialFillCount": 0
+        }
+      ]
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 23,
+      "Name": "AmbushCrates",
+      "Flags": [
+        "AllowDisabled"
+      ],
+      "Location": {
+        "AliasID": 24,
+        "RefType": "02FD6F:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 25,
+      "Name": "Companion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked",
+        "IsCompanion",
+        "OptionalAllScenes"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 0
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 34,
+      "Name": "Dogmeat",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked",
+        "IsCompanion",
+        "OptionalAllScenes"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 5
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestCollectionAlias",
+      "Collection": [
+        {
+          "AliasID": 26,
+          "MaxInitialFillCount": 0
+        }
+      ]
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 26,
+      "Name": "TaphousePatronsIntro",
+      "Flags": [
+        "Optional"
+      ],
+      "PackageData": [
+        "196A61:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 33,
+      "Name": "TaphouseLocation",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional"
+      ],
+      "SpecificLocation": "00396D:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 35,
+      "Name": "PhotoCooke",
+      "Flags": [
+        "Optional",
+        "AllowDisabled"
+      ],
+      "ForcedReference": "218F16:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 36,
+      "Name": "PhotoLatimer",
+      "Flags": [
+        "Optional",
+        "AllowDisabled"
+      ],
+      "ForcedReference": "218F17:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 37,
+      "Name": "PhotoPembroke",
+      "Flags": [
+        "Optional",
+        "AllowDisabled"
+      ],
+      "ForcedReference": "218F18:Fallout4.esm",
+      "VoiceTypes": "Null"
+    }
+  ],
+  "QuestGroup": "0E6EB9:Fallout4.esm",
+  "SwfFile": "components\\quest vault boys\\miscellaneous quests\\ms13_diamond city blues.swf",
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0A7D14:Fallout4.esm",
+      "VersionControl": 7268,
+      "Version2": 1,
+      "Quest": "022A04:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "03CD8D:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 8,
+          "Flags": {
+            "Flags": [
+              "0x4",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "08213E:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8671:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Hey. You there. I, uh... I have a question for you."
+              },
+              "ScriptNotes": "tentatively",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB0FB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "002F14:Fallout4.esm",
+                "ParameterOneNumber": 12052
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB0FB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000014:Fallout4.esm",
+                "ParameterTwoNumber": 20
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB0FB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB0FB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000096:Fallout4.esm",
+                "ParameterTwoNumber": 150
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB0FB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000C8:Fallout4.esm",
+                "ParameterTwoNumber": 200
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB0FB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000FA:Fallout4.esm",
+                "ParameterTwoNumber": 250
+              }
+            }
+          ],
+          "StartScene": "03CDA5:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "03CD8E:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 9,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "03CD8D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "111073:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I still need to ask you somethin'."
+              },
+              "ScriptNotes": "tentatively",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xB02FE3F7DABCD301"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB5FB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "002F14:Fallout4.esm",
+                "ParameterOneNumber": 12052
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB5FB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000014:Fallout4.esm",
+                "ParameterTwoNumber": 20
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB5FB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB5FB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000096:Fallout4.esm",
+                "ParameterTwoNumber": 150
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB5FB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000C8:Fallout4.esm",
+                "ParameterTwoNumber": 200
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xB5FB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000FA:Fallout4.esm",
+                "ParameterTwoNumber": 250
+              }
+            }
+          ],
+          "StartScene": "03CDA5:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0433BD:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 9,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "03CD8E:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "111073:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Will you help me talk to Cooke? Get him to leave my wife alone?"
+              },
+              "ScriptNotes": "hopefully",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBBFB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "002F14:Fallout4.esm",
+                "ParameterOneNumber": 12052
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBBFB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000014:Fallout4.esm",
+                "ParameterTwoNumber": 20
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBBFB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000096:Fallout4.esm",
+                "ParameterTwoNumber": 150
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBBFB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000C8:Fallout4.esm",
+                "ParameterTwoNumber": 200
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xBBFB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000FA:Fallout4.esm",
+                "ParameterTwoNumber": 250
+              }
+            }
+          ],
+          "StartScene": "03CDA5:Fallout4.esm",
+          "INTV": "0x05000000",
+          "StartScenePhase": "Loop to player choice",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "08213E:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 5,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "04D2C8:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "111073:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Did you change your mind? I swear, I'll pay you for your help."
+              },
+              "ScriptNotes": "hopefully",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xABFB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "002F14:Fallout4.esm",
+                "ParameterOneNumber": 12052
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xABFB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "000014:Fallout4.esm",
+                "ParameterTwoNumber": 20
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xABFB5D",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000E6:Fallout4.esm",
+                "ParameterTwoNumber": 230
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xABFB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000D2:Fallout4.esm",
+                "ParameterTwoNumber": 210
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xABFB5D",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24059,
+                "ParameterOneRecord": "022A04:Fallout4.esm",
+                "ParameterOneNumber": 141828,
+                "ParameterTwoRecord": "0000DC:Fallout4.esm",
+                "ParameterTwoNumber": 220
+              }
+            }
+          ],
+          "StartScene": "03CDA5:Fallout4.esm",
+          "INTV": "0x05000000",
+          "StartScenePhase": "Loop to player choice",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

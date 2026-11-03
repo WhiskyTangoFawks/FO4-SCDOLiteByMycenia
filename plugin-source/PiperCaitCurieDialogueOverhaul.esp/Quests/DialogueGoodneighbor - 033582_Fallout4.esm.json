@@ -1,0 +1,737 @@
+{
+  "FormKey": "033582:Fallout4.esm",
+  "VersionControl": 8434,
+  "EditorID": "DialogueGoodneighbor",
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "DialogueGoodneighborScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Agility",
+            "Object": "0002C7:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Magnolia",
+            "Object": "033582:Fallout4.esm",
+            "Alias": 3
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "MagnoliaGreetScene03",
+            "Object": "1AC13B:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Endurance",
+            "Object": "0002C4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Perception",
+            "Object": "0002C3:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Strength",
+            "Object": "0002C2:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Intelligence",
+            "Object": "0002C6:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "HotelMagnoliaMarkerREF",
+            "Object": "1AD903:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Luck",
+            "Object": "0002C8:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Charisma",
+            "Object": "0002C5:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LoversEmbracePerkSpell",
+            "Object": "0F3C1D:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "HotelPlayerMarkerREF",
+            "Object": "1AD904:Fallout4.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "AnimFaceArchetypeFriendly",
+          "Object": "0C866F:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_VaultTecGhoul",
+          "Object": "033582:Fallout4.esm",
+          "Alias": 8
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "VaultTecGhoulWalkHallwayScene",
+          "Object": "0C455B:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "AnimArchetypeFriendly",
+          "Object": "03D290:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pMQ104",
+          "Object": "01F25E:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "GoodneighborMagnoliaSingMarker",
+          "Object": "075EBA:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_Magnolia",
+          "Object": "033582:Fallout4.esm",
+          "Alias": 3
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 35,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0035_Item_00"
+      },
+      {
+        "Stage": 40,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0040_Item_00"
+      },
+      {
+        "Stage": 17,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0017_Item_00"
+      },
+      {
+        "Stage": 120,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0120_Item_00"
+      },
+      {
+        "Stage": 30,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0030_Item_00"
+      },
+      {
+        "Stage": 25,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0025_Item_00"
+      },
+      {
+        "Stage": 15,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_DialogueGoodneighbor_00033582",
+        "FragmentName": "Fragment_Stage_0015_Item_00"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "033582:Fallout4.esm",
+          "Alias": 3
+        },
+        "Scripts": [
+          {
+            "Name": "defaultaliasonunload",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "preReqStage",
+                "Data": 110
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 120
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "033582:Fallout4.esm",
+          "Alias": 14
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultAliasReadWhileSittingScript",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "IdleBookReadStart",
+                "Object": "0785F2:Fallout4.esm"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectListProperty",
+                "Name": "ReadingPackages",
+                "Objects": [
+                  {
+                    "Name": "",
+                    "Object": "075EE0:Fallout4.esm"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 30,
+    "Unused": 92
+  },
+  "Location": "022610:Fallout4.esm",
+  "TextDisplayGlobals": [
+    "026A98:Fallout4.esm"
+  ],
+  "Filter": "Dialogue\\Goodneighbor\\",
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 10,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "talked to Magnolia"
+        }
+      ]
+    },
+    {
+      "Index": 15,
+      "Unknown": 29,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Trigger Vault Tec Rep Walk"
+        }
+      ]
+    },
+    {
+      "Index": 17,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Vault Tec Forcegreet"
+        }
+      ]
+    },
+    {
+      "Index": 20,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Vault Tec Rep"
+        }
+      ]
+    },
+    {
+      "Index": 25,
+      "Unknown": 29,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Vault Tec Rep has forcegreeted"
+        }
+      ]
+    },
+    {
+      "Index": 30,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Vault Tec Rep goes to Sanctuary"
+        }
+      ]
+    },
+    {
+      "Index": 35,
+      "Unknown": 25,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "MQ104 - Irma has Forcegreeted"
+        }
+      ]
+    },
+    {
+      "Index": 40,
+      "Unknown": 25,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "MQ104 - Irma tells you to use the Memory Pod"
+        }
+      ]
+    },
+    {
+      "Index": 50,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Flirted with Hancock"
+        }
+      ]
+    },
+    {
+      "Index": 55,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Talked to Hancock about the Radiation drug"
+        }
+      ]
+    },
+    {
+      "Index": 60,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Hancock dialogue done"
+        }
+      ]
+    },
+    {
+      "Index": 100,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Magnolia Date triggered"
+        }
+      ]
+    },
+    {
+      "Index": 110,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Magnolia Date Over"
+        }
+      ]
+    },
+    {
+      "Index": 120,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Move Magnolia back after the date"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 13,
+      "Name": "GoodneighborHotelRexfordLocation",
+      "Flags": [],
+      "SpecificLocation": "0226D7:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "Irma",
+      "Flags": [],
+      "UniqueActor": "0228A5:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 2,
+      "Name": "Daisy",
+      "Flags": [],
+      "UniqueActor": "022952:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "Magnolia",
+      "Flags": [],
+      "UniqueActor": "02268A:Fallout4.esm",
+      "PackageData": [
+        "1AD907:Fallout4.esm",
+        "1AD905:Fallout4.esm"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 4,
+      "Name": "Whitechapel",
+      "Flags": [],
+      "UniqueActor": "022687:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 5,
+      "Name": "Kleo",
+      "Flags": [],
+      "UniqueActor": "0228CE:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 6,
+      "Name": "Fred",
+      "Flags": [],
+      "UniqueActor": "0226D9:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 7,
+      "Name": "Clair",
+      "Flags": [],
+      "UniqueActor": "0226DC:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 8,
+      "Name": "VaultTecGhoul",
+      "Flags": [],
+      "UniqueActor": "031FB3:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 9,
+      "Name": "Hancock",
+      "Flags": [],
+      "UniqueActor": "022613:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 10,
+      "Name": "Fahrenheit",
+      "Flags": [],
+      "UniqueActor": "022616:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 14,
+      "Name": "Marowski",
+      "Flags": [],
+      "UniqueActor": "0226E2:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 11,
+      "Name": "Companion",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked",
+        "OptionalAllScenes"
+      ],
+      "External": {
+        "Quest": "0289E4:Fallout4.esm",
+        "AliasID": 0
+      },
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0A7CF5:Fallout4.esm",
+      "VersionControl": 7319,
+      "Version2": 3,
+      "Quest": "033582:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "020A27:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 11,
+          "Flags": {
+            "Flags": [
+              "0x4",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "10C90D:Fallout4.esm",
+          "DialogGroup": "10C90D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Ah, man, someone new! You need some Jet, man. Homebrewed. Reasonable prices."
+              },
+              "ScriptNotes": "Player walks into the hotel where you brew and sell chems",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x102744D7DD89D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xC6AE5E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24232,
+                "ParameterOneRecord": "10CB94:Fallout4.esm",
+                "ParameterOneNumber": 1100692,
+                "ParameterTwoRecord": "00000A:Fallout4.esm",
+                "ParameterTwoNumber": 10
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xC6AE5E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsID",
+                "Unknown2": 24232,
+                "ParameterOneRecord": "0226D9:Fallout4.esm",
+                "ParameterOneNumber": 141017
+              }
+            }
+          ],
+          "StartScene": "075EC1:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "020A28:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 8,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "10CBD8:Fallout4.esm",
+          "DialogGroup": "10C90D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I am... so... happy to see you again. I got all kinds of candy, if you're interested."
+              },
+              "ScriptNotes": "player walks up to you",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x90E47EF0DD89D001"
+            }
+          ],
+          "StartScene": "075EC1:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "020A29:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 8,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "020A28:Fallout4.esm",
+          "DialogGroup": "10C90D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You... I love you. If all my customers were... you... that would be super swell. Now I got all kinds of chems lookin' for a home."
+              },
+              "ScriptNotes": "always smiling, jovial, stoned",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x00E058A6EFF9D501"
+            }
+          ],
+          "StartScene": "075EC1:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "020A2A:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 7,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "020A29:Fallout4.esm",
+          "DialogGroup": "10C90D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8672:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Whoa. It's you. Didn't I just see you? I got whiplash. Oh man. You should definitely try this stuff."
+              },
+              "ScriptNotes": "always smiling, jovial, stoned",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "075EC1:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "020A2B:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 8,
+          "Flags": {
+            "Flags": [
+              "Random",
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "020A2A:Fallout4.esm",
+          "DialogGroup": "10C90D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It's my favorite person. Got some premium shit here."
+              },
+              "ScriptNotes": "always smiling, jovial, stoned",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "StartScene": "075EC1:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "10CBD8:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 6,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ],
+            "ResetHours": 24.0
+          },
+          "PreviousDialog": "020A27:Fallout4.esm",
+          "DialogGroup": "10C90D:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Thanks again for pulling that job at HalluciGen. Those compounds are a little beyond me, but I'll figure it out. Anyway, you need some chems?"
+              },
+              "ScriptNotes": "Player did a previous job you hired him for",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x90A25AE3DD89D001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xCAAE5E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24238,
+                "ParameterOneRecord": "10CB94:Fallout4.esm",
+                "ParameterOneNumber": 1100692,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            }
+          ],
+          "StartScene": "075EC1:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

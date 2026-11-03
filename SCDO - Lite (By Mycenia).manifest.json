@@ -1,0 +1,6 @@
+{
+"version":1,
+"packages":[
+{"kind":"installationFile","name":"SCDO Lite-61204-1-1654944717.7z","packageVersion":"1.0.0.0","size":162189,"hash":"Fd2dBA+nhRA=","host":{"nexus":{"game":"fallout4","mod":61204,"file":240278}}}
+]
+}

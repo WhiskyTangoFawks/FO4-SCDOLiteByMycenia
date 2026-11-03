@@ -1,0 +1,7 @@
+*
+!/.gitignore
+!/.gitattributes
+!/build.json
+!/plugin-source/
+!/plugin-source/**
+!/SCDO\ -\ Lite\ (By\ Mycenia).manifest.json

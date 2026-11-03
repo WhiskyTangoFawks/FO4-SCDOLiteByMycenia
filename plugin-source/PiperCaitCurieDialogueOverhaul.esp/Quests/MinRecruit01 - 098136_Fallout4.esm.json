@@ -1,0 +1,1567 @@
+{
+  "FormKey": "098136:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "MinRecruit01",
+  "Version2": 10,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "minrecruitquestscript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Alias_SettlementSpokesman",
+            "Object": "098136:Fallout4.esm",
+            "Alias": 6
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "REParent",
+            "Object": "02DFEE:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PrestonGarvey",
+            "Object": "098136:Fallout4.esm",
+            "Alias": 7
+          },
+          {
+            "MutagenObjectType": "ScriptBoolProperty",
+            "Name": "StopQuestWhenAliasesUnloaded"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "TimeoutMessage",
+            "Object": "247976:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "EventWorkshop",
+            "Object": "098136:Fallout4.esm",
+            "Alias": 20
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "WorkshopParent",
+            "Object": "02058E:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptBoolProperty",
+            "Name": "StopQuestWhenAliasesDead"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Workshop",
+            "Object": "098136:Fallout4.esm",
+            "Alias": 9
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "MinutemenCentralQuest",
+            "Object": "067FF9:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LocationToReset",
+            "Object": "098136:Fallout4.esm",
+            "Alias": 4
+          }
+        ]
+      },
+      {
+        "Name": "defaultcounterquesta"
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_MinRecruit01_00098136",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_SettlementSpokesman",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 6
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_SettlementNPCs",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 22
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "MinRecruitLowLevelCount",
+          "Object": "23BF79:Fallout4.esm"
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_RaiderBosses",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 23
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_SettlementMapMarker",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 10
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_SettlementWorkshop",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 9
+        },
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "Alias_RaiderMapMarker",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 8
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 40,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0040_Item_00"
+      },
+      {
+        "Stage": 80,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0080_Item_00"
+      },
+      {
+        "Stage": 400,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0400_Item_00"
+      },
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      },
+      {
+        "Stage": 90,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0090_Item_00"
+      },
+      {
+        "Stage": 500,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0500_Item_00"
+      },
+      {
+        "Stage": 20,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0020_Item_00"
+      },
+      {
+        "Stage": 200,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0200_Item_00"
+      },
+      {
+        "Stage": 50,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0050_Item_00"
+      },
+      {
+        "Stage": 100,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0100_Item_00"
+      },
+      {
+        "Stage": 100,
+        "StageIndex": 2,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0100_Item_02"
+      },
+      {
+        "Stage": 100,
+        "StageIndex": 1,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0100_Item_01"
+      },
+      {
+        "Stage": 300,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0300_Item_00"
+      },
+      {
+        "Stage": 450,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0450_Item_00"
+      },
+      {
+        "Stage": 450,
+        "StageIndex": 1,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0450_Item_01"
+      },
+      {
+        "Stage": 450,
+        "StageIndex": 4,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_MinRecruit01_00098136",
+        "FragmentName": "Fragment_Stage_0450_Item_04"
+      }
+    ],
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 23
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultCollectionAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 200
+              }
+            ]
+          },
+          {
+            "Name": "defaultcounteraliascolincondeatha",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "TargetRemainingCount",
+                "Data": 3
+              },
+              {
+                "MutagenObjectType": "ScriptBoolProperty",
+                "Name": "RemoveWhenDead",
+                "Data": true
+              },
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "MyRemainingStage",
+                "Data": 150
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "098136:Fallout4.esm",
+          "Alias": 6
+        },
+        "Scripts": [
+          {
+            "Name": "DefaultAliasOnDeath",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptIntProperty",
+                "Name": "StageToSet",
+                "Data": 300
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Raider Troubles at <Alias=ActualLocation>"
+  },
+  "Data": {
+    "Priority": 74,
+    "Unused": 92,
+    "Type": "Minutemen"
+  },
+  "Event": "SCPT",
+  "QuestCompletionXp": "0AEF8B:Fallout4.esm",
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 10,
+      "Flags": [
+        "RunOnStart"
+      ],
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Startup"
+        }
+      ]
+    },
+    {
+      "Index": 20,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player has accepted quest"
+        }
+      ]
+    },
+    {
+      "Index": 40,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Radio gives initial objective"
+        }
+      ]
+    },
+    {
+      "Index": 50,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "[LOG] Preston gives initial objective"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000028:Fallout4.esm",
+                "ParameterTwoNumber": 40
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I heard a broadcast over Radio Freedom about a settlement that needs help. I need to speak with someone at <Alias=ActualLocation> who can give me more details on the trouble they're having."
+          }
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000028:Fallout4.esm",
+                "ParameterTwoNumber": 40
+              }
+            }
+          ],
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Preston Garvey has asked me to travel to a settlement that's requested help from the Minutemen. I should go to <Alias=ActualLocation> as soon as possible and see what I can do to help them."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 80,
+      "Unknown": 25,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player spoke to NPC"
+        }
+      ]
+    },
+    {
+      "Index": 90,
+      "Unknown": 27,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Player refuses to help"
+        }
+      ]
+    },
+    {
+      "Index": 100,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "[LOG] Settlement gives objective to dungeon",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "A nearby gang of Raiders has been terrorizing <Alias=ActualLocation>. I need to find them, and make sure they'll never be a threat to anyone else again."
+          }
+        },
+        {
+          "Flags": [],
+          "Note": "Send affinity event"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000032:Fallout4.esm",
+                "ParameterTwoNumber": 50
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 150,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Show boss QTs"
+        }
+      ]
+    },
+    {
+      "Index": 200,
+      "Unknown": 16,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "[LOG] Raider boss killed",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I was able to take out the leader of the nearby Raider gang. They should no longer be a threat to anyone. I need to return to <Alias=ActualLocation> and let them know they're safe."
+          }
+        }
+      ]
+    },
+    {
+      "Index": 300,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Finish quest - FAIL"
+        }
+      ]
+    },
+    {
+      "Index": 400,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Finish quest - SUCCESS"
+        }
+      ]
+    },
+    {
+      "Index": 450,
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000190:Fallout4.esm",
+                "ParameterTwoNumber": 400
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "6F7CA0:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1617919136,
+                "ParameterTwoString": "::PrestonIntroOn_var"
+              }
+            }
+          ],
+          "Note": "[LOG] Objective to return to Preston (if he gave intro)",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Now that I've helped <Alias=ActualLocation>, I need to let Preston know the good news."
+          }
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "00012C:Fallout4.esm",
+                "ParameterTwoNumber": 300
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "6F7E70:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1617919600,
+                "ParameterTwoString": "::PrestonIntroOn_var"
+              }
+            }
+          ],
+          "Note": "[LOG] Objective to return to Preston (if he gave intro)",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "I should talk to Preston and let him know we won't be gaining the support of <Alias=ActualLocation>."
+          }
+        },
+        {
+          "Flags": [
+            "CompleteQuest"
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "6F7FE0:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1617919968,
+                "ParameterTwoString": "::PrestonIntroOn_var"
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "00012C:Fallout4.esm",
+                "ParameterTwoNumber": 300
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000190:Fallout4.esm",
+                "ParameterTwoNumber": 400
+              }
+            }
+          ],
+          "Note": "COMPLETE"
+        },
+        {
+          "Flags": [
+            "FailQuest"
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "6F81E0:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1617920480,
+                "ParameterTwoString": "::PrestonIntroOn_var"
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "00012C:Fallout4.esm",
+                "ParameterTwoNumber": 300
+              }
+            }
+          ],
+          "Note": "FAIL"
+        },
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetVMQuestVariable",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "6F7BA0:PiperCaitCurieDialogueOverhaul.esp",
+                "ParameterTwoNumber": 1617918880,
+                "ParameterTwoString": "::PrestonIntroOn_var"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 500,
+      "Flags": [
+        "RunOnStop"
+      ],
+      "Unknown": 26,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Stop quest"
+        },
+        {
+          "Flags": [
+            "CompleteQuest"
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000190:Fallout4.esm",
+                "ParameterTwoNumber": 400
+              }
+            }
+          ],
+          "Note": "COMPLETE"
+        },
+        {
+          "Flags": [
+            "FailQuest"
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000190:Fallout4.esm",
+                "ParameterTwoNumber": 400
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x512D8E",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000014:Fallout4.esm",
+                "ParameterTwoNumber": 20
+              }
+            }
+          ],
+          "Note": "FAIL"
+        }
+      ]
+    }
+  ],
+  "Objectives": [
+    {
+      "Index": 10,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Talk to the settlers at <Alias=ActualLocation>"
+      },
+      "Targets": [
+        {
+          "AliasID": 6
+        }
+      ]
+    },
+    {
+      "Index": 20,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Kill the raiders in <Alias=RaiderDungeon>"
+      },
+      "Targets": [
+        {
+          "AliasID": 23,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDead",
+                "Unknown2": 31276
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetDisabled",
+                "Unknown2": 31276
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionGlobal",
+              "CompareOperator": "LessThanOrEqualTo",
+              "Unknown1": "0x000000",
+              "ComparisonValue": "22BF79:Fallout4.esm",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetLocationAliasRefTypeAliveCount",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "000004:Fallout4.esm",
+                "ParameterOneNumber": 4,
+                "ParameterTwoRecord": "003956:Fallout4.esm",
+                "ParameterTwoNumber": 14678
+              }
+            }
+          ]
+        },
+        {
+          "AliasID": 8,
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x000000",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetInCurrentLocationAlias",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "000004:Fallout4.esm",
+                "ParameterOneNumber": 4
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionGlobal",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Flags": [
+                "ParametersUseAliases"
+              ],
+              "Unknown1": "0x000000",
+              "ComparisonValue": "2267DA:Fallout4.esm",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetDistance",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "000008:Fallout4.esm",
+                "ParameterOneNumber": 8
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionGlobal",
+              "CompareOperator": "GreaterThan",
+              "Unknown1": "0x000000",
+              "ComparisonValue": "22BF79:Fallout4.esm",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetLocationAliasRefTypeAliveCount",
+                "Unknown2": 31276,
+                "ParameterOneRecord": "000004:Fallout4.esm",
+                "ParameterOneNumber": 4,
+                "ParameterTwoRecord": "003956:Fallout4.esm",
+                "ParameterTwoNumber": 14678
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 30,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Report your success to settlers at <Alias=ActualLocation>"
+      },
+      "Targets": [
+        {
+          "AliasID": 6
+        }
+      ]
+    },
+    {
+      "Index": 40,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Talk to Preston Garvey"
+      },
+      "Targets": [
+        {
+          "AliasID": 7
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 19,
+      "Name": "AnyWorkshop",
+      "Flags": [
+        "Optional",
+        "AllowReuseInQuest",
+        "MatchingRefClosest"
+      ],
+      "AliasIDToForceIntoWhenFilled": 9,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "083C9A:Fallout4.esm",
+            "ParameterOneNumber": 539802
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "022611:Fallout4.esm",
+            "ParameterOneNumber": 140817
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "CompareOperator": "GreaterThan",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetValue",
+            "ParameterOneRecord": "00033C:Fallout4.esm",
+            "ParameterOneNumber": 828
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetVMScriptVariable",
+            "ParameterOneRecord": "6F60D0:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterOneNumber": 1617912016,
+            "ParameterOneString": "workshopscript",
+            "ParameterTwoRecord": "6F6100:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterTwoNumber": 1617912064,
+            "ParameterTwoString": "::MinRecruitmentProhibitRandom_var"
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "054BA7:Fallout4.esm",
+            "ParameterOneNumber": 347047
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "249FD7:Fallout4.esm",
+            "ParameterOneNumber": 2400215
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "249FDA:Fallout4.esm",
+            "ParameterOneNumber": 2400218
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "CompareOperator": "GreaterThan",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetBaseValue",
+            "ParameterOneRecord": "12723E:Fallout4.esm",
+            "ParameterOneNumber": 1208894
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionGlobal",
+          "CompareOperator": "LessThan",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": "23888E:Fallout4.esm",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetVMQuestVariable",
+            "ParameterOneRecord": "067FF9:Fallout4.esm",
+            "ParameterOneNumber": 425977,
+            "ParameterTwoRecord": "6F6310:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterTwoNumber": 1617912592,
+            "ParameterTwoString": "::ActiveRecruitmentQuests_var"
+          }
+        }
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 17,
+      "Name": "UnownedWorkshop",
+      "Flags": [
+        "Optional",
+        "AllowReuseInQuest",
+        "MatchingRefClosest"
+      ],
+      "AliasIDToForceIntoWhenFilled": 9,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "083C9A:Fallout4.esm",
+            "ParameterOneNumber": 539802
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "022611:Fallout4.esm",
+            "ParameterOneNumber": 140817
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetVMScriptVariable",
+            "ParameterOneRecord": "6F67A0:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterOneNumber": 1617913760,
+            "ParameterOneString": "workshopscript",
+            "ParameterTwoRecord": "6F67D0:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterTwoNumber": 1617913808,
+            "ParameterTwoString": "::MinRecruitmentProhibitRandom_var"
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "054BA7:Fallout4.esm",
+            "ParameterOneNumber": 347047
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "249FD7:Fallout4.esm",
+            "ParameterOneNumber": 2400215
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "249FDA:Fallout4.esm",
+            "ParameterOneNumber": 2400218
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetValue",
+            "ParameterOneRecord": "00033C:Fallout4.esm",
+            "ParameterOneNumber": 828
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "CompareOperator": "GreaterThan",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetBaseValue",
+            "ParameterOneRecord": "12723E:Fallout4.esm",
+            "ParameterOneNumber": 1208894
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionGlobal",
+          "CompareOperator": "LessThan",
+          "Unknown1": "0x302D7A",
+          "ComparisonValue": "23888E:Fallout4.esm",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetVMQuestVariable",
+            "ParameterOneRecord": "067FF9:Fallout4.esm",
+            "ParameterOneNumber": 425977,
+            "ParameterTwoRecord": "6F6A40:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterTwoNumber": 1617914432,
+            "ParameterTwoString": "::ActiveRecruitmentQuests_var"
+          }
+        }
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 20,
+      "Name": "EventWorkshop",
+      "Flags": [
+        "Optional"
+      ],
+      "AliasIDToForceIntoWhenFilled": 9,
+      "FindMatchingRefFromEvent": {
+        "FromEvent": "SCPT",
+        "EventData": "12626"
+      },
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetVMScriptVariable",
+            "ParameterOneRecord": "6F2200:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterOneNumber": 1617895936,
+            "ParameterOneString": "workshopscript",
+            "ParameterTwoRecord": "6F2230:PiperCaitCurieDialogueOverhaul.esp",
+            "ParameterTwoNumber": 1617895984,
+            "ParameterTwoString": "::MinRecruitmentProhibitRandom_var"
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "CompareOperator": "GreaterThan",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "GetBaseValue",
+            "ParameterOneRecord": "12723E:Fallout4.esm",
+            "ParameterOneNumber": 1208894
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "249FD7:Fallout4.esm",
+            "ParameterOneNumber": 2400215
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x302D7A",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "HasKeyword",
+            "ParameterOneRecord": "249FDA:Fallout4.esm",
+            "ParameterOneNumber": 2400218
+          }
+        }
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 9,
+      "Name": "Workshop",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "ForcedByAliases"
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 2,
+      "Name": "ActualLocation",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "StoresText"
+      ],
+      "ReferenceAliasLocation": {
+        "AliasID": 9
+      }
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 3,
+      "Name": "SettlementCenterMarker",
+      "Flags": [
+        "Optional"
+      ],
+      "Location": {
+        "AliasID": 2,
+        "RefType": "01F40F:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 10,
+      "Name": "SettlementMapMarker",
+      "Flags": [
+        "Optional"
+      ],
+      "Location": {
+        "AliasID": 2,
+        "RefType": "02271F:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 7,
+      "Name": "PrestonGarvey",
+      "Flags": [
+        "AllowDisabled",
+        "AllowReserved"
+      ],
+      "UniqueActor": "019FD9:Fallout4.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestLocationAlias",
+      "ID": 4,
+      "Name": "RaiderDungeon",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "StoresText"
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x512D8E",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "0254BC:Fallout4.esm",
+            "ParameterOneNumber": 152764
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x512D8E",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "083C9A:Fallout4.esm",
+            "ParameterOneNumber": 539802
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x512D8E",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasKeyword",
+            "ParameterOneRecord": "030855:Fallout4.esm",
+            "ParameterOneNumber": 198741
+          }
+        },
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x512D8E",
+          "ComparisonValue": 1.0,
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "LocationHasRefType",
+            "ParameterOneRecord": "003956:Fallout4.esm",
+            "ParameterOneNumber": 14678
+          }
+        }
+      ],
+      "ClosestToAlias": 9
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 8,
+      "Name": "RaiderMapMarker",
+      "Flags": [
+        "Optional"
+      ],
+      "Location": {
+        "AliasID": 4,
+        "RefType": "02271F:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestCollectionAlias",
+      "Collection": [
+        {
+          "AliasID": 23,
+          "MaxInitialFillCount": 0
+        }
+      ]
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 23,
+      "Name": "RaiderBosses",
+      "Flags": [],
+      "Location": {
+        "AliasID": 4,
+        "RefType": "003956:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 14,
+      "Name": "SettlementBoss",
+      "Flags": [
+        "Optional"
+      ],
+      "AliasIDToForceIntoWhenFilled": 6,
+      "Location": {
+        "AliasID": 2,
+        "RefType": "003956:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 13,
+      "Name": "SettlementLeader",
+      "Flags": [
+        "Optional"
+      ],
+      "AliasIDToForceIntoWhenFilled": 6,
+      "Location": {
+        "AliasID": 2,
+        "RefType": "0B91E8:Fallout4.esm"
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 6,
+      "Name": "SettlementSpokesman",
+      "Flags": [
+        "StoresText",
+        "Protected",
+        "ForcedByAliases"
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown1": "0x000000",
+          "Data": {
+            "MutagenObjectType": "FunctionConditionData",
+            "Function": "IsChild"
+          }
+        }
+      ],
+      "LinkedAliases": [
+        {
+          "Keyword": "03085E:Fallout4.esm",
+          "AliasID": 3
+        }
+      ],
+      "PackageData": [
+        "10C849:Fallout4.esm"
+      ],
+      "VoiceTypes": "0C8608:Fallout4.esm"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 11,
+      "Name": "MinutemenRadioStation",
+      "Flags": [
+        "Optional",
+        "ExternalAliasLinked"
+      ],
+      "External": {
+        "Quest": "067FF9:Fallout4.esm",
+        "AliasID": 2
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestCollectionAlias",
+      "Collection": [
+        {
+          "AliasID": 22,
+          "MaxInitialFillCount": 0
+        }
+      ]
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 22,
+      "Name": "SettlementNPCs",
+      "Flags": [
+        "Optional",
+        "AllowReuseInQuest"
+      ],
+      "Location": {
+        "AliasID": 2,
+        "RefType": "003956:Fallout4.esm"
+      },
+      "Factions": [
+        "1ABC41:Fallout4.esm"
+      ],
+      "VoiceTypes": "0C8608:Fallout4.esm"
+    }
+  ],
+  "QuestGroup": "0E6D66:Fallout4.esm",
+  "SwfFile": "components\\faction vault boys\\minutemen\\faction_vb_minutemen.swf",
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0A768B:Fallout4.esm",
+      "VersionControl": 7494,
+      "Version2": 2,
+      "Quest": "098136:Fallout4.esm",
+      "Category": "Misc",
+      "Subtype": "Greeting",
+      "SubtypeName": "GREE",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "099889:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 14,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "099888:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84C:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Did the Minutemen send you?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": ""
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x7C7060",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsAliasRef",
+                "Unknown2": 24688,
+                "ParameterOneRecord": "000006:Fallout4.esm",
+                "ParameterOneNumber": 6
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x7C7060",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24688,
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x7C7060",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "RunOnType": "Reference",
+                "Reference": "000014:Fallout4.esm",
+                "Function": "GetInFaction",
+                "Unknown2": 24688,
+                "ParameterOneRecord": "068043:Fallout4.esm",
+                "ParameterOneNumber": 426051
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x7C7060",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetTalkedToPC",
+                "Unknown2": 24688
+              }
+            }
+          ],
+          "StartScene": "0998B5:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "10C82C:Fallout4.esm",
+          "VersionControl": 10284,
+          "Version2": 8,
+          "Flags": {
+            "Flags": [
+              "ForceAllChildrenPlayerActivateOnly"
+            ]
+          },
+          "PreviousDialog": "099889:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA852:Fallout4.esm",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "We could really use your help."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x10874ED2B859CF01"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x827060",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsAliasRef",
+                "Unknown2": 24688,
+                "ParameterOneRecord": "000006:Fallout4.esm",
+                "ParameterOneNumber": 6
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x827060",
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStageDone",
+                "Unknown2": 24688,
+                "ParameterOneRecord": "098136:Fallout4.esm",
+                "ParameterOneNumber": 622902,
+                "ParameterTwoRecord": "000064:Fallout4.esm",
+                "ParameterTwoNumber": 100
+              }
+            }
+          ],
+          "StartScene": "0998B5:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

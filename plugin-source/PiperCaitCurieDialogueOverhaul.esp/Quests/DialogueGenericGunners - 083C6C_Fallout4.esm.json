@@ -1,0 +1,313 @@
+{
+  "FormKey": "083C6C:Fallout4.esm",
+  "VersionControl": 9925,
+  "EditorID": "DialogueGenericGunners",
+  "Version2": 5,
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Gunner Combat Lines, Reactions, Dialogue"
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "StartsEnabled"
+    ],
+    "Priority": 10,
+    "Unused": 92
+  },
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x712D8E",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsVoiceType",
+        "ParameterOneRecord": "083C7D:Fallout4.esm",
+        "ParameterOneNumber": 539773
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x712D8E",
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetInFaction",
+        "ParameterOneRecord": "0AF8D9:Fallout4.esm",
+        "ParameterOneNumber": 719065
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Aliases": [],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "0C8E3C:Fallout4.esm",
+      "VersionControl": 7035,
+      "Quest": "083C6C:Fallout4.esm",
+      "Category": "Combat",
+      "Subtype": "Taunt",
+      "SubtypeName": "TAUT",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0CFF0C:Fallout4.esm",
+          "VersionControl": 10093,
+          "Version2": 2,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0CFF0B:Fallout4.esm",
+          "DialogGroup": "0C83AF:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You are seriously fucked! You know that?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x309FD45F7C3AD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01C5AF:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10093,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0CFF0C:Fallout4.esm",
+          "DialogGroup": "0C83AF:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Keep your heads down!"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x901FD663869AD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThanOrEqualTo",
+              "Unknown1": "0x88FD10",
+              "ComparisonValue": 50.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetRandomPercent",
+                "Unknown2": 4349
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Flags": [
+                "OR"
+              ],
+              "Unknown1": "0x88FD10",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4349,
+                "ParameterOneRecord": "083C7C:Fallout4.esm",
+                "ParameterOneNumber": 539772
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Flags": [
+                "OR"
+              ],
+              "Unknown1": "0x88FD10",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4349,
+                "ParameterOneRecord": "083C7A:Fallout4.esm",
+                "ParameterOneNumber": 539770
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01C5B0:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10093,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "01C5AF:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "0C83AF:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Hold the line!"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x1049B3DC869AD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThanOrEqualTo",
+              "Unknown1": "0x8BFD10",
+              "ComparisonValue": 50.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetRandomPercent",
+                "Unknown2": 4349
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Flags": [
+                "OR"
+              ],
+              "Unknown1": "0x8BFD10",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4349,
+                "ParameterOneRecord": "083C7C:Fallout4.esm",
+                "ParameterOneNumber": 539772
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Flags": [
+                "OR"
+              ],
+              "Unknown1": "0x8BFD10",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4349,
+                "ParameterOneRecord": "083C7A:Fallout4.esm",
+                "ParameterOneNumber": 539770
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01C5B1:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10093,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "01C5B0:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "0C83AF:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "Unknown": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Keep firing! We've almost got them!"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA0599810879AD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThanOrEqualTo",
+              "Unknown1": "0x8FFD10",
+              "ComparisonValue": 20.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetRandomPercent",
+                "Unknown2": 4349
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Flags": [
+                "OR"
+              ],
+              "Unknown1": "0x8FFD10",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4349,
+                "ParameterOneRecord": "083C7C:Fallout4.esm",
+                "ParameterOneNumber": 539772
+              }
+            },
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Flags": [
+                "OR"
+              ],
+              "Unknown1": "0x8FFD10",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4349,
+                "ParameterOneRecord": "083C7A:Fallout4.esm",
+                "ParameterOneNumber": 539770
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}

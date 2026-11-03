@@ -1,0 +1,2990 @@
+{
+  "FormKey": "1A96D5:Fallout4.esm",
+  "VersionControl": 10076,
+  "EditorID": "COMCurieTalk",
+  "Version2": 3,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "COMTalkQuestScript",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T5_Hatred",
+            "Object": "04B1C8:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CompanionActor",
+            "Object": "102249:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T1_Infatuation",
+            "Object": "04B1C4:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T4_Disdain",
+            "Object": "04B1C7:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T2_Admiration",
+            "Object": "04B1C5:Fallout4.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CA_T3_Neutral",
+            "Object": "04B1C6:Fallout4.esm"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": "Fragments:Quests:QF_COMCurieTalk_001A96D5",
+      "Properties": [
+        {
+          "MutagenObjectType": "ScriptObjectProperty",
+          "Name": "pCOMCurie",
+          "Object": "0BBD9A:Fallout4.esm"
+        }
+      ]
+    },
+    "Fragments": [
+      {
+        "Stage": 10,
+        "Unknown2": 1,
+        "ScriptName": "Fragments:Quests:QF_COMCurieTalk_001A96D5",
+        "FragmentName": "Fragment_Stage_0010_Item_00"
+      }
+    ]
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "AllowRepeatedStages",
+      "StartsEnabled",
+      "RunOnce"
+    ],
+    "Priority": 30,
+    "Unused": 92
+  },
+  "DialogConditions": [
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Flags": [
+        "OR"
+      ],
+      "Unknown1": "0x712D8E",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsAliasRef"
+      }
+    },
+    {
+      "MutagenObjectType": "ConditionFloat",
+      "Unknown1": "0x712D8E",
+      "ComparisonValue": 1.0,
+      "Data": {
+        "MutagenObjectType": "FunctionConditionData",
+        "Function": "GetIsID",
+        "ParameterOneRecord": "000007:Fallout4.esm",
+        "ParameterOneNumber": 7
+      }
+    }
+  ],
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Index": 10,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Dismissed Curie"
+        }
+      ]
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "Name": "Curie",
+      "Flags": [
+        "QuestObject",
+        "AllowDead",
+        "AllowDisabled",
+        "AllowDestroyed"
+      ],
+      "UniqueActor": "027686:Fallout4.esm",
+      "VoiceTypes": "Null"
+    }
+  ],
+  "Timestamp": 10636,
+  "Unknown": 424,
+  "DialogTopics": [
+    {
+      "FormKey": "1A96E0:Fallout4.esm",
+      "VersionControl": 7770,
+      "Quest": "1A96D5:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A9716:Fallout4.esm",
+          "MajorRecordFlagsRaw": 64,
+          "VersionControl": 10096,
+          "Fallout4MajorRecordFlags": [
+            "0x40"
+          ],
+          "Flags": {
+            "Flags": [
+              "ChildInfosDontInheritResetData"
+            ]
+          },
+          "PreviousDialog": "Null",
+          "StartScenePhase": "",
+          "SubtitlePriority": "0",
+          "MajorFlags": [
+            "InfoGroup"
+          ]
+        },
+        {
+          "FormKey": "1A9717:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 4,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9716:Fallout4.esm",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You keep squandering precious opportunities to affect positive change."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x20C7E1C33A4DD001"
+            },
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 2,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Considering the sad state of the world, this is most distressing."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xB08F62633A4DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "1A9718:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9717:Fallout4.esm",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Our traveling arrangements are barely satisfactory. Sometimes I wish I stayed in the Vault."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x407570803A4DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "1A9719:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 4,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9718:Fallout4.esm",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Until you start treating the people of the Commonwealth better, you and I are not good."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x70AEA8A23A4DD001"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xEDE263",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetInCurrentLocation",
+                "Unknown2": 25570,
+                "ParameterOneRecord": "002CF0:Fallout4.esm",
+                "ParameterOneNumber": 11504
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "1A971A:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9719:Fallout4.esm",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You have done so many things that violate my ethical programming. If you do not right things, you and I are through."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x40416EE33A4DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "1A971B:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A971A:Fallout4.esm",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C8670:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Start helping people. Treating people well. Otherwise our journeys will be terminated."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xD0375FF33A4DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC21:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A971B:Fallout4.esm",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84C:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I believe what is important to you differs greatly from the things I value."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF0CA5091C19CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x0B1611",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC22:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC21:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84C:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Sometime, I wonder if it is better if we take separate paths."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE076130FC29CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x0E1611",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC23:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC22:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9716:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "If you want to part company, I would not object."
+              },
+              "ScriptNotes": "You're talking to someone you're not a fan of.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x900E2330C29CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x101611",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A96E2:Fallout4.esm",
+      "VersionControl": 7770,
+      "Quest": "1A96D5:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A96FA:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A96F9:Fallout4.esm",
+          "DialogGroup": "1A96F5:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I... enjoy our traveling together. It is very satisfying."
+              },
+              "ScriptNotes": "You're talking to a good friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x70061CC4394DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC24:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A96FA:Fallout4.esm",
+          "DialogGroup": "1A96F5:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "This gift of life you've given me, I am so... thankful. I feel thanks. A mix of obligation and... appreciation."
+              },
+              "ScriptNotes": "You're talking to a good friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x40F4EE6EC29CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFF1511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC25:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC24:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A96F5:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It is good to travel with such an esteemed colleague."
+              },
+              "ScriptNotes": "You're talking to a good friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA089879AC29CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x021611",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC26:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC25:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A96F5:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It is comforting to know you have my back. I have yours, have no doubt."
+              },
+              "ScriptNotes": "You're talking to a good friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x80EF5BC6C29CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x051611",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC28:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC26:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A96F5:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "No matter how extreme the odds, together I think we will overcome."
+              },
+              "ScriptNotes": "You're talking to a good friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x8087B614C39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0x081611",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4374,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A96E3:Fallout4.esm",
+      "VersionControl": 7770,
+      "Quest": "1A96D5:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A9728:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 3,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9727:Fallout4.esm",
+          "DialogGroup": "1A9723:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "We're fantastic. You keep doing all the things you do, and I think there will be books about you."
+              },
+              "ScriptNotes": "You're talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE000A742394DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC27:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9728:Fallout4.esm",
+          "DialogGroup": "1A9723:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Is there a word for friends that are very, very friendly? Maybe the best friend? I have decided, we are bestest friends."
+              },
+              "ScriptNotes": "You're talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE05570F0C29CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xF91511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC29:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC27:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9723:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I find myself... humming inside. I feel so very... Happy, this is the word!"
+              },
+              "ScriptNotes": "You're talking to your best friend.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x60348243C39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xFC1511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1A96E4:Fallout4.esm",
+      "VersionControl": 7770,
+      "Quest": "1A96D5:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "1A9715:Fallout4.esm",
+          "VersionControl": 10096,
+          "Version2": 4,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9714:Fallout4.esm",
+          "DialogGroup": "1A9710:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I thought the greatest challenge to advancing science would be the limitations of the human brain."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE086A8CF384DD001"
+            },
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 2,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "But it is instead you. So deliciously distracting."
+              },
+              "ScriptNotes": "Flirty",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF05D1ADB384DD001"
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC2A:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1A9715:Fallout4.esm",
+          "DialogGroup": "1A9710:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Love. Love. Love. What a wonderful word."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x90D6697AC39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xEA1511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC2B:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC2A:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9710:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I can see why humans always prattle so much about love. It is quite intoxicating."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x10622F9AC39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xED1511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC2C:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC2B:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9710:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "112004:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It has hard to contemplate science with you so close."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x20F80CBCC39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xF01511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC2D:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC2C:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9710:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA847:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You know, you move in such a delightful manner. It is very... stimulating."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x006F35DDC39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xF31511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "01EC2E:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10096,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "01EC2D:PiperCaitCurieDialogueOverhaul.esp",
+          "DialogGroup": "1A9710:Fallout4.esm",
+          "Responses": [
+            {
+              "Emotion": "0FA84C:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I must warn you, the thought of you being... close with anyone else causes very complicated emotions in me."
+              },
+              "ScriptNotes": "You're speaking to someone you're desperately in love with.",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x208F41FFC39CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "Unknown1": "0xF61511",
+              "ComparisonValue": 1.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetIsVoiceType",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "1647BF:Fallout4.esm",
+                "ParameterOneNumber": 1460159
+              }
+            }
+          ],
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1AB93C:Fallout4.esm",
+      "VersionControl": 7771,
+      "Quest": "1A96D5:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0064BE:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "Null",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "As you wish."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE0F757F6208CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x991511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "007499:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0064BE:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "You need assistance."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x1076084C218CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x971511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00749A:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "007499:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0C866F:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I am happy to help."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x30419C72218CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x9D1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00749B:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "00749A:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Do you need something?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF0B39EBA218CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0xA01511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00749C:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "00749B:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "What do you wish to talk about?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x7077E2FB218CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0xA21511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "INTV": "0x01000000",
+          "StartScenePhase": "More Options",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00749D:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "00749C:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I wonder. What happened to all the satellites? Are some still working in the darkness of space?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x609A1ABA228CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xA61511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00749E:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "00749D:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Fish are an excellent source of Omega-3."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA0FBADF3228CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xA91511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "00749F:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "00749E:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Surely there is a working airplane somewhere. To study the world from above would be very illuminating."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xB0D9AF0D238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xAB1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A0:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "00749F:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I wonder how the ebola, hepatitis, and influenza have mutated over the years."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x602BAB56238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xAE1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A1:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A0:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I hypothesize that the initial cause of many animal mutations was mankind's research. The Mirelurk, for example."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE0154C7D238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xB11511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A2:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0074A1:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Hopefully now I can properly further my scientific research."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x30693492238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xB41511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A3:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A2:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Converting the ocean's waters to potable radiation-free water would greatly improve the life of all. I must study this."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA00224AD238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xB61511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A4:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A3:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Studying physical injury could result in something, I suppose."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x105D4ACB238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xB91511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A5:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A4:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "The aquatic ecosystem is worthy of study. The Mirelurks role in this, I am sure, is quite fascinating."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE0A7A6E0238CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xBC1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A6:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A5:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "The medical arts will not advance unless we share our findings with each other."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x70F3CC0B248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xBE1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A7:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A6:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "One day, I would like to establish a hospital. Where medical practioneers could come and learn and perform dangerous procedures."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x40562B20248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xC11511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A8:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A7:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I plan on sharing all my medical findings with the entire Commonwealth. Anything you can provide would help greatly."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x4016DB3C248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xC41511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074A9:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A8:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I have a hypothesis that benign gestures or actions function, on some level, like a virus. It can be contagious."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x00BE4A60248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xB01511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074AA:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074A9:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "The curious case of the FEV virus. Does anyone know its origins?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xC0E8727A248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xCA1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074AB:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074AA:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Mole rats are a curious species."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA0168D8E248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xCC1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074AC:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074AB:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "A routine analysis of you indicates you have suffered very little from radiation. Curious."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x80DD78B0248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xCF1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074AD:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074AC:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Barter is such a curiously human quality."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x006F91C2248CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xD21511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074AE:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074AD:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I wonder if insects were particularly susceptible to the environmental factors after the War. So many different species."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x90005D16258CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xD41511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0083FE:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0074AE:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "It stands to reason that aquatic animals would succumb to the ravages of radiation."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x005F9C294A8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xD71511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0083FF:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0083FE:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Was the ancestor of the mole rat a mole or a rat? Does anyone know?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xF0FFEA4E4A8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xDA1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "008400:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0083FF:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Humanity is so resilient, to cling to life despite all of this. It is the duty of us all to further that survival."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x90C7A0864A8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xDD1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "008401:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "008400:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I wonder what has happened elsewhere? Is what has befallen the Commonwealth atypical. Less extreme. More?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xC0D010A14A8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xDF1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "008402:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "008401:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Please, let me see and scan as many indigenous life forms as possible. It is, of course, for science."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xE0989CBE4A8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xE21511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "008403:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "008402:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Do we not all owe some obligation to each other? It is enlightened self-interest to help others."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x00CCA2DD4A8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xE51511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "008404:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "0x1",
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "008403:PiperCaitCurieDialogueOverhaul.esp",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I find my head full of notions. Experiments. Many will fail, but maybe I will make more discoveries."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x20CD680F4B8CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0xE71511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScene": "1A9729:Fallout4.esm",
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    },
+    {
+      "FormKey": "1AB940:Fallout4.esm",
+      "VersionControl": 7771,
+      "Quest": "1A96D5:Fallout4.esm",
+      "Category": "Scene",
+      "Subtype": "Custom17",
+      "SubtypeName": "SCEN",
+      "Timestamp": 10636,
+      "Unknown": 424,
+      "Responses": [
+        {
+          "FormKey": "0064BD:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "Null",
+          "OverrideFileName": "0000364b",
+          "Responses": [
+            {
+              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Tell me about the options."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x4034BB67288CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x7F1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074B9:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10097,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ],
+            "ResetHours": 0.9997711
+          },
+          "PreviousDialog": "0064BD:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00003dfe",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "What else do you have? (More Options)"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x909419ABA69DD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x821511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074BA:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "1AB944:Fallout4.esm",
+          "OverrideFileName": "00003658",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Tell me what's on your mind."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x10CB1A28298CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x8D1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074BB:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0074BA:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "0000365a",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Your thoughts?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA045EA39298CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x8F1511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074BC:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0074BB:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "0000365b",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Just curious what you're thinking."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xA0E8CB4B298CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x921511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074BD:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10097,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ],
+            "ResetHours": 1.9999084
+          },
+          "PreviousDialog": "0074B9:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00003dff",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "Show me what you got. (More Options)"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0xC00538B4A69DD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x851511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "0074BE:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0074BD:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00004599",
+          "Responses": [
+            {
+              "Emotion": "0D755D:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "I wanted to ask you about something else."
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x50F5D674298CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThanOrEqualTo",
+              "Unknown1": "0x881511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "More Options"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        },
+        {
+          "FormKey": "007C60:PiperCaitCurieDialogueOverhaul.esp",
+          "VersionControl": 10074,
+          "Flags": {
+            "Flags": [
+              "Random"
+            ]
+          },
+          "PreviousDialog": "0074BC:PiperCaitCurieDialogueOverhaul.esp",
+          "OverrideFileName": "00002e78",
+          "Responses": [
+            {
+              "Emotion": "154F0E:Fallout4.esm",
+              "ResponseNumber": 1,
+              "CameraTargetAlias": -1,
+              "CameraLocationAlias": -1,
+              "Text": {
+                "TargetLanguage": "English",
+                "Value": "What's on your mind?"
+              },
+              "ScriptNotes": "",
+              "Edits": "",
+              "AlternateLipText": "",
+              "TextHash": "0x001CEA52348CD501"
+            }
+          ],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "LessThan",
+              "Unknown1": "0x941511",
+              "ComparisonValue": 500.0,
+              "Data": {
+                "MutagenObjectType": "FunctionConditionData",
+                "Function": "GetStage",
+                "Unknown2": 4373,
+                "ParameterOneRecord": "16454E:Fallout4.esm",
+                "ParameterOneNumber": 1459534
+              }
+            }
+          ],
+          "Prompt": {
+            "TargetLanguage": "English",
+            "Value": "Your Thoughts?"
+          },
+          "StartScenePhase": "",
+          "SubtitlePriority": "Low"
+        }
+      ]
+    }
+  ]
+}
