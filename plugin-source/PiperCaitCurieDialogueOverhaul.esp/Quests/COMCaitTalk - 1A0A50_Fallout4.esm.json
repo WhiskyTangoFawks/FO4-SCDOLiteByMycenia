@@ -43,10 +43,7 @@
     ],
     "Versioning": [
       "Break0"
-    ],
-    "Script": {
-      "Name": ""
-    }
+    ]
   },
   "Name": {
     "TargetLanguage": "English",
@@ -902,7 +899,7 @@
           "PreviousDialog": "Null",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -937,7 +934,7 @@
           "PreviousDialog": "0054E0:PiperCaitCurieDialogueOverhaul.esp",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,

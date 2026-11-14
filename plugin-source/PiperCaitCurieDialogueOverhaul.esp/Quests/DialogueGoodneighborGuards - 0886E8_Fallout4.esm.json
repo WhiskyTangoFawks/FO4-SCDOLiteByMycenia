@@ -69,7 +69,7 @@
           "PreviousDialog": "10C557:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -126,7 +126,7 @@
           "PreviousDialog": "10C558:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -171,7 +171,7 @@
           "PreviousDialog": "088715:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -215,7 +215,7 @@
           "PreviousDialog": "116014:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -259,7 +259,7 @@
           "PreviousDialog": "116015:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,

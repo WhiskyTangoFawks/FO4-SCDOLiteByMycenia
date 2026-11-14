@@ -941,7 +941,7 @@
           "PreviousDialog": "04B4D1:DLCNukaWorld.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -1513,7 +1513,7 @@
           "OverrideFileName": "00004599",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -1546,7 +1546,7 @@
           "OverrideFileName": "00003dff",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -1579,7 +1579,7 @@
           "OverrideFileName": "0000364b",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -1612,7 +1612,7 @@
           "OverrideFileName": "00003dfe",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,

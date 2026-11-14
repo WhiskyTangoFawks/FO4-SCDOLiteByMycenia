@@ -3051,7 +3051,7 @@
           "DialogGroup": "1577A4:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,

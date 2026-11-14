@@ -940,7 +940,7 @@
           "PreviousDialog": "Null",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,

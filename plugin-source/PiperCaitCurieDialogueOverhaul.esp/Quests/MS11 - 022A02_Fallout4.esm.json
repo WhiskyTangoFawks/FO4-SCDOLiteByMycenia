@@ -3630,7 +3630,7 @@
           "PreviousDialog": "1D5002:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,

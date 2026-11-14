@@ -180,7 +180,7 @@
               "TextHash": "0x20C7E1C33A4DD001"
             },
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 2,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -841,7 +841,7 @@
               "TextHash": "0xE086A8CF384DD001"
             },
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 2,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,
@@ -2610,7 +2610,7 @@
           "OverrideFileName": "0000364b",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "CameraTargetAlias": -1,
               "CameraLocationAlias": -1,

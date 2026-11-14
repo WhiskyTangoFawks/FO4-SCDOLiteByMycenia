@@ -4410,7 +4410,7 @@
           "DialogGroup": "12843F:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -4909,7 +4909,7 @@
           "DialogGroup": "12841F:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -4941,7 +4941,7 @@
           "DialogGroup": "12841F:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,
@@ -7078,7 +7078,7 @@
           "DialogGroup": "12842B:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "CameraTargetAlias": -1,

@@ -1173,7 +1173,7 @@
           "DialogGroup": "0ECA53:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "InterruptPercentage": 40,
@@ -1207,7 +1207,7 @@
           "DialogGroup": "0ECA53:Fallout4.esm",
           "Responses": [
             {
-              "Emotion": "FFFFFF:PiperCaitCurieDialogueOverhaul.esp",
+              "Emotion": "None",
               "ResponseNumber": 1,
               "Unknown": 1,
               "InterruptPercentage": 40,
